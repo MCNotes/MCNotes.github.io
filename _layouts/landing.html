@@ -13,14 +13,76 @@
 {{content}}
 
 <div class='container'>
+  <!-- about the submission process -->
   <div class='row'>
-  <div class='container col-sm-6'>
-    <h3> About the submissions </h3>
-    <p> Submissions are made via pull requests from a fork of the master branch of this
-      repository. The review process of the submissions </p>
-  </div>
-</div>
-</div>
+    <div class='container col-sm-6'>
+      <h3 class = 'h3-responsive text-center'> About the submission process </h3>
+      <p class="text-justify">Submissions are made via pull requests from a
+        fork of the master branch of this
+        repository. The review process of the submissions </p>
+        <p class="text-justify"> The review process is completely open to follow
+          and interaction among
+          author and reviewers is highly encouraged.
+          The work presented here is meant to serve as a publication platform
+          promoting reproducible research. </p>
+        </div>
+        <!--process explained -->
+
+        <div class='container col-sm-6'>
+          <h3 class = 'h3-responsive text-center'> Submissions explained</h3>
+
+          <!--- panel start-->
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a  data-toggle="collapse" data-parent="#accordion" data-target="#collapseOne">
+                    First steps
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  Fork the provided template from <a href=''> here </a> and use this
+                  forked version to work on.
+                  <br>
+                  Please note that <a href='http://blog.jupyter.org/2017/04/04/jupyter-notebook-5-0/'>
+                  Project Jupyter</a> only provides support for Python 3.5 submissions should be made
+                  with Python 3.5 when applicable.
+
+                </div>
+              </div>
+            </div>
+          <!-- panel end-->
+          <!--- panel start-->
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a  data-toggle="collapse" data-parent="#accordion" data-target="#collapse2">
+                    Notebook content
+                  </a>
+                </h4>
+              </div>
+              <div id="collapse2" class="panel-collapse collapse ">
+                <div class="panel-body">
+                  You are only allowed to submit a single notebook at a time.
+                  Each notebook should contain the following information:
+                  <ul>
+                    <li> Title of the notebook</li>
+                    <li> Abstract </li>
+                    <li> Cell descriptions and cells to run the code </li>
+                    <li> Conclusions </li>
+                    <li> References </li>
+                  </ul>
+
+
+              </div>
+            </div>
+          <!-- panel end-->
+          </div>
+        </div>
+      </div>
+    </div>
 
 {% include footer.html%}
 

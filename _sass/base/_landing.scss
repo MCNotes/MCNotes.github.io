@@ -88,6 +88,16 @@
   }
 }
 
+/*** panels ***/
+.panel-title a {
+    display: block;
+    padding: 10px 15px;
+    margin: -10px -15px;
+    font-size: 0.75em;
+    text-transform: uppercase;
+}
+
+
 /*** footer ***/
 footer.page-footer{
   background-color: $primary;
