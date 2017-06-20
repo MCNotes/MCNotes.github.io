@@ -175,8 +175,9 @@
         <div class='container col-sm-6'>
           <h3 class = 'h3-responsive text-center'> Submissions explained</h3>
 
-          <!--- panel start-->
+
           <div class="panel-group" id="accordion">
+            <!--- panel start-->
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h4 class="panel-title">
@@ -191,42 +192,99 @@
                   forked version to work on.
                   <br>
                   Please note that <a href='http://blog.jupyter.org/2017/04/04/jupyter-notebook-5-0/'>
-                  Project Jupyter</a> only provides support for Python 3.5 submissions should be made
-                  with Python 3.5 when applicable.
+                    Project Jupyter</a> only provides support for Python 3.5 submissions should be made
+                    with Python 3.5 when applicable.
 
+                  </div>
                 </div>
               </div>
-            </div>
-          <!-- panel end-->
-          <!--- panel start-->
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title">
-                  <a  data-toggle="collapse" data-parent="#accordion" data-target="#collapse2">
-                    Notebook content
-                  </a>
-                </h4>
-              </div>
-              <div id="collapse2" class="panel-collapse collapse ">
-                <div class="panel-body">
-                  You are only allowed to submit a single notebook at a time.
-                  Each notebook should contain the following information:
-                  <ul>
-                    <li> Title of the notebook</li>
-                    <li> Abstract </li>
-                    <li> Cell descriptions and cells to run the code </li>
-                    <li> Conclusions </li>
-                    <li> References </li>
-                  </ul>
+              <!-- panel end-->
 
+              <!--- panel start-->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a  data-toggle="collapse" data-parent="#accordion" data-target="#collapse3">
+                      Files to submit
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    All the submissions should include the following documents:
+                    <ol>
+                      <li> <strong> notebook.ipynb </strong>: Jupyter notebook executable in Python 3.x.
+                        This notebook should be able to be run as a standalone instance (without user interaction).
+                        Figures generated as part of the analysis should be displayed in the
+                        notebook. </li>
+                        <li> <strong> requirements.yml </strong>: packages required to execute your Notebook.
+                          The use of <a href='https://conda.io/docs/using/envs.html'> Conda environments
+                          </a> is highly encouraged. An example of an appropriate 'requirements.yml' <fieldset>
+                            can be seen <a href = ''> here </a>.
+                          </li>
+                          <li> <strong> metadata.yml </strong>: Yaml file containing the metadata
+                            for your publication. This file will be used to add a DOI to your notebook
+                            for citation. An example can be seen <a href="" > here </a>.
+                            Optional entries are marked as <strong> Optional </strong> in the template provided.</li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- panel end-->
 
-              </div>
-            </div>
-          <!-- panel end-->
-          </div>
-        </div>
-      </div>
-    </div>
+                    <!--- panel start-->
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a  data-toggle="collapse" data-parent="#accordion" data-target="#collapse2">
+                            Notebook content
+                          </a>
+                        </h4>
+                      </div>
+                      <div id="collapse2" class="panel-collapse collapse ">
+                        <div class="panel-body">
+                          You are only allowed to submit a single notebook at a time.
+                          Each notebook should contain the following information:
+                          <ol>
+                            <li> Title of the notebook</li>
+                            <li> Abstract: The main text should be prefaced by
+                              an abstract of no more than 250 words summarising the
+                              main arguments and conclusions of the article. This must have the
+                              heading ‘Abstract’ and be easily identified from the start of the main text. </li>
+                              <li> Cell descriptions and cells to run the code: The main text narrative should
+                                cover the main details of the scripts presented.  </li>
+                                <li> Main text: The body should be structured in a logical and easy to follow manner.
+                                  Latex and Markdown may be used when necessary.
+                                  <li> Conclusions </li>
+                                  <li> References: all references cited within the submission must be listed article
+                                    at the end of the notebook in a separate cell with the heading 'References' </li>
+                                  </ol>
+
+                                </div>
+                              </div>
+                            </div>
+                            <!-- panel end-->
+                            <!--- panel start-->
+                            <div class="panel panel-default">
+                              <div class="panel-heading">
+                                <h4 class="panel-title">
+                                  <a  data-toggle="collapse" data-parent="#accordion" data-target="#collapse4">
+                                    Your data
+                                  </a>
+                                </h4>
+                              </div>
+                              <div id="collapse4" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                  
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- panel end-->
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
 
 <!--Footer-->
