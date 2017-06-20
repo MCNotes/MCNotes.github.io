@@ -11,144 +11,22 @@
     transition: background .5s ease-in-out, padding .5s ease-in-out;
 }
 
- /*** intro header in landing page**/
-.intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
-    text-align: center;
-    color: $white;
-    background: url(../images/dna.jpg) no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+.navbar{
+  border-radius: 0;
+  margin-bottom: 10px;;
+  background-color: $primary;
+
 }
 
-.intro-message {
-    position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
-    color: $white;
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: $secondary;
+  background-color: rgba(255,255,255,.1);
+  font-weight: 400;
 }
 
-.intro-message > h1 {
-    margin: 0;
-    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-    font-size: 5em;
-    color:$white;
-}
-
-.intro-divider {
-    width: 400px;
-    border-top: 1px solid #f8f8f8;
-    border-bottom: 1px solid rgba(0,0,0,0.2);
-}
-
-.intro-message > h3 {
-    color: $white;
-}
-
-
-/*Call to action*/
-
-.flex-center {
-    color: #fff;
-}
-
-.view {
-    background: url("https://mdbootstrap.com/img/Photos/Horizontal/Work/full page/img%20(2).jpg")no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-
-
-
-$c1 : #674172;
-$c2 : #ffffff;
-*{
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-html,
-body
-{
-    margin: 0;
-  background: $c1;
-}
-
-canvas
-{
-    display: block;
-
-    vertical-align: bottom;
-}
-
-#aa_particles
-{
-    z-index: 4;
-
-    height: 100%;
-    height: 100vh;
-
-    background: $c1;
-}
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:100);
-
-.aa_sec
-{
-    position: absolute;
-    z-index: 5;
-    top: 50%;
-    right: 0;
-    left: 0;
-
-    margin: 0  auto;
-}
-.aa_txt
-{
-    font: 100 10vh/1 Roboto;
-
-    text-align: center;
-
-    color: $c1;
-}
-.aa_inner
-{
-    padding: 0 2rem;
-
-    text-transform: uppercase;
-
-    background: $c2;
-}
-.aa_of
-{
-    padding: 1rem;
-
-    color: $c2;
-    background: darken($c1,5%);
-}
-
-
-@import url(https://fonts.googleapis.com/css?family=Roboto:100);
-
-.aa_ahmadawais{
-  display: table;
-  width: 100%;
-  vertical-align: bottom;
-  margin: 5rem 0 5rem ;
-  text-align: center;
-  background: $c1;
-  color: $c2;
-  font: 100 2vh/2 Roboto;
-  & a{
-    color: darken($c2,20%);
-    text-decoration: none;
-    border-bottom: 1px solid darken($c2,20%);
-  }
-
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: $secondary;
+  background-color: transparent;
 }
