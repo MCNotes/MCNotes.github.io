@@ -87,3 +87,13 @@
             transform: translateY(46px);
   }
 }
+
+/*** footer ***/
+footer.page-footer{
+  background-color: $primary;
+  color: $white;
+}
+footer.page-footer .footer-copyright {
+  background-color: $primary-dark;
+  color: $white;
+}

@@ -5076,6 +5076,7 @@ blockquote p {
   .divider-new h2 {
     margin-top: 5px; }
 
+
 .divider-new::before {
   content: '';
   height: 1.5px;
