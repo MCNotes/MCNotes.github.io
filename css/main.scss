@@ -3,16 +3,14 @@
 ---
 @charset "utf-8";
 
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700,400italic");
-@import url('https://fonts.googleapis.com/css?family=Imprima|Kaffeesatz');
-@import url('https://fonts.googleapis.com/css?family=Cantata+One|Muli');
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|Monserrat');
 
 @import "base/variables";
 
 /* Custom fonts used */
-$base-font: 'Pridi', sans-serif;
+$title-font: 'Monserrat', sans-serif;
 /*$title-font: 'Cantata One', Georgia, serif;*/
-$title-font: 'Kaffeesatz', sans-serif;
+$base-font: 'Crimson Text', serif;
 
 /*!
  * bootswatch v3.3.7
@@ -7043,4 +7041,5 @@ a.list-group-item-danger.active:focus {
 @import "base/syntax",
         "base/custom-toc",
         "base/custom",
-        "base/landing";
+        "base/landing",
+        "base/particles";
