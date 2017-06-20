@@ -1,0 +1,191 @@
+body{
+  font-family: $base-font;
+  overflow-x: hidden;
+  box-shadow: none;
+}
+
+/***Nav bar ***/
+.navbar{
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+
+/*** Links ***/
+a {
+  color: $secondary-light;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent; }
+  a:hover, a:focus {
+    text-decoration: underline;
+    color: $secondary-light;
+  }
+/***Headings ***/
+h1,
+h2,
+h3,
+h4,
+h5{
+  font-family: $title-font;
+}
+
+h1{
+  color: $secondary-dark;
+}
+
+
+h2,
+h3,
+h4,
+h5{
+  color: $secondary;
+}
+
+/**** Code ***/
+pre,
+code {
+  font-size: 15px;
+  color: $gray-darker;
+  background-color: $gray-lighter;
+}
+
+code {
+    color: $gray-darker;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    background-color: $gray-lighter;
+}
+
+pre{
+  white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: scroll;
+}
+
+/*** images ***/
+img{
+  width: 100%;
+  height: auto;
+}
+
+/*** Tables ***/
+table{
+  width: 100%;
+  display: block;
+  margin-bottom: 2em;
+}
+
+tr{
+  line-height: 1.75em;
+}
+td{
+  padding-left: 0.5em;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: $gray-lighter;
+}
+
+
+
+
+/** edge header ***/
+edge-header{
+  p{
+    font-size: 2.5em;
+  }
+}
+
+/*** Lists ***/
+ul {
+  padding: 0;
+  list-style-type: disc; }
+  ul li {
+    list-style-type: disc; }
+
+/*** Card block ***/
+.card-block {
+    h4 {
+        margin-bottom: 1rem;
+        font-weight: 400;
+        text-align: center;
+        font-family: $title-font;
+    }
+    h3 {
+        margin-bottom: 1rem;
+        font-weight: 400;
+        text-align: center;
+        font-family: $title-font;
+    }
+    p {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    .btn{
+      margin-bottom: 5px;
+    }
+}
+
+.card{
+  margin-top: 15px;
+}
+
+
+
+/*** Floating button ***/
+.float{
+	position:fixed;
+	width:50px;
+	height:50px;
+	bottom:20px;
+	right:40px;
+	background-color: $primary;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+  font-size: 1.25em;
+  &:hover{
+    background-color: lighten($primary, 5%);
+  }
+}
+
+a.float:hover,
+a.float:focus {
+  text-decoration: underline;
+  color: $white;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+
+.label-container{
+	position:fixed;
+	bottom:22px;
+	right:100px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+a.float + div.label-container {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease;
+}
+
+a.float:hover + div.label-container{
+  visibility: visible;
+  opacity: 1;
+}

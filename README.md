@@ -1,1 +1,0 @@
-mc-notes.github.io
