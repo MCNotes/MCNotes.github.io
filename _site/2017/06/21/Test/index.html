@@ -71,20 +71,20 @@
 </head>
 
 
-<!-- scroller for TOC-->
+<!-- Scroller for TOC-->
 <body data-spy="scroll" data-target="#toc">
 
 
-
-<!--main content needs to be in a wrap for
+<!-- Main content needs to be in a wrap for
 when the sidebar is displayed-->
-  <div class='wrap'>
 
-<!-- navbar -->
-  <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top scrolling-navbar" role="navigation"
+
+
+<!-- nav bar-->
+<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-static-top scrolling-navbar" role="navigation"
     id = 'top_nav'>
-        <div class="container-fluid">
+        <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -115,13 +115,16 @@ when the sidebar is displayed-->
         <!-- /.container -->
     </nav>
 
-</div>
+
 <div class='wrap'>
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
 
-<!--- Main content--->
-      <div class="col-sm-8">
+
+      <div class="col-sm-10 ">
+        <div class = 'page-header'>
+          <h1> Initial post! It's alive! </h1>
+        </div>
         <main>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ornare vulputate egestas. Aenean lobortis neque elit, id placerat odio venenatis eu. Maecenas lacinia interdum porttitor. Nulla ut erat nec nulla lacinia egestas sit amet ut massa. Donec eu elementum ante, vitae congue massa. Maecenas suscipit efficitur venenatis. Nunc ultrices enim sed sem lobortis ullamcorper. Praesent ornare, tortor ut blandit ullamcorper, felis velit rhoncus libero, eleifend imperdiet ante eros vel nulla. Duis magna tortor, consectetur id massa quis, ultricies ultricies purus.</p>
 
@@ -134,17 +137,27 @@ when the sidebar is displayed-->
         </main>
       </div>
 
-      <div class="col-sm-1">
-      </div>
-      <!-- TOC sidebar, which will move to the top on a small screen -->
-      <div class="col-sm-3 container-toc">
-        <nav id="toc" data-spy="affix" data-toggle="toc"></nav>
-      </div>
+
     </div>
   </div>
 </div>
 
-<label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+<!--Footer-->
+<footer class="page-footer center-on-small-only">
+<div id="gotop"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
+  <!--Copyright-->
+    <div class="footer-copyright">
+        <div class="container-fluid">
+            © 2017 Copyright: <a href="http://rse.shef.ac.uk"> RSE at Sheffield</a>
+
+        </div>
+    </div>
+    <!--/.Copyright-->
+
+</footer>
+<!--/.Footer-->
+
 
 </body>
 
