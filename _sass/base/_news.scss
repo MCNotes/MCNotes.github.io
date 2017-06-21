@@ -1,0 +1,69 @@
+/* dates */
+ul.dates
+{
+a{
+text-decoration: none;
+color: $secondary-dark;
+text-transform: uppercase;
+}
+a:hover{text-decoration: underline;}
+}
+
+ul.dates li
+{
+position: relative;
+border-top: solid 1px #ddd;
+padding: 1.3em 0 1.3em 10em;
+list-style: none;
+}
+
+ul.dates .date
+{
+display: block;
+position: absolute;
+left: 0;
+top: 1em;
+background-color: #fff;
+text-align: center;
+color: $secondary-dark;
+padding: 1em 0.75em 0 0.75em;
+border: 1px solid $secondary-dark;
+height: 65px;
+width: 65px;
+-webkit-border-radius:75px;
+font-family: $title-font;
+font-weight: bolder;
+font-size: 1em;
+text-transform: uppercase;
+}
+
+
+ul.dates .date day
+{
+display: block;
+font-size: 1.5em;
+line-height: 0.75em;
+color: $secondary-dark;
+}
+
+ul.dates h3
+{
+font-size: 1.1em;
+color: $gray-darker;
+}
+
+ul.dates p
+{
+margin: 0;
+}
+
+ul.dates li:first-child
+{
+border-top: 0;
+padding-top: 0;
+}
+
+ul.dates li:first-child .date
+{
+top: 0;
+}

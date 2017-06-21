@@ -31,7 +31,7 @@ canvas
 {
     position: absolute;
     z-index: 5;
-    top: 50%;
+    top: 40%;
     right: 0;
     left: 0;
     margin: 0  auto;
@@ -47,6 +47,7 @@ canvas
     padding: 0 2rem;
     text-transform: uppercase;
     background: $c2;
+    box-shadow: 0px 0px 9px #fff;
 }
 .part_of
 {

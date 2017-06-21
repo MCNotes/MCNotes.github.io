@@ -1,0 +1,22 @@
+<div class="container">
+
+  <div class="divider-new">
+    <h2 class="h2-responsive wow fadeIn" data-wow-delay="0.2s">
+    News</h2>
+  </div>
+
+
+
+<ul class="dates">
+  {% for post in site.posts offset: 0 limit: 5 %}
+    <li>
+      <p class='date'><day>{{ post.date | date: "%d"}}</day>
+      {{ post.date | date: "%b"}}</p>
+      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+      {{ post.excerpt }}
+    </li>
+    <button type="button" class="btn btn-outline-info waves-effect">Info</button>
+  {% endfor %}
+</ul>
+
+</div>
