@@ -14,7 +14,11 @@ a {
   a:hover, a:focus {
     text-decoration: underline;
     color: $secondary-light;
+  a:visited{
+    color: $primary;
   }
+  }
+
 /***Headings ***/
 h1,
 h2,
@@ -181,4 +185,23 @@ a.float + div.label-container {
 a.float:hover + div.label-container{
   visibility: visible;
   opacity: 1;
+}
+
+
+/*** Go to top button ***/
+#gotop{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 5px 10px;
+    font-size: 1.0em;
+    background: $primary;
+    color: white;
+		cursor: pointer;
+		border-radius: 5px;
+    border:2px solid white;
+		&:hover {
+      background-color: white;
+      color: $primary-light;
+      border:2px solid $primary-light;}
 }
