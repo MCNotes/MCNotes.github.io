@@ -15,6 +15,7 @@
   border-radius: 0;
   margin-bottom: 10px;;
   background-color: $primary;
+  font-family: $title-font;
 }
 
 
@@ -102,6 +103,7 @@
 footer.page-footer{
   background-color: $primary;
   color: $white;
+  font-family: $title-font;
 }
 footer.page-footer .footer-copyright {
   background-color: $primary-dark;

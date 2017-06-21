@@ -109,7 +109,7 @@
     </nav>
 
 
-
+<!--partiles animation and title -->
 <div class="part_sec">
   <div class="part_txt">
     <span class="part_inner">
@@ -122,59 +122,63 @@
 </div>
 <div id="particles-js"></div>
 
+<!-- animated scroll icon -->
 <div class='icon-scroll'></div>
 
-<!-- Main container-->
-<div class="container">
-
-    <div class="divider-new">
-        <h2 class="h2-responsive wow fadeIn" data-wow-delay="0.2s">About the journal</h2>
-    </div>
-
-    <!--Section: About-->
-    <section id="about" class="text-center wow fadeIn" data-wow-delay="0.2s">
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit explicabo assumenda eligendi ex exercitationem harum deleniti quaerat beatae ducimus dolor voluptates magnam, reiciendis pariatur culpa tempore quibusdam quidem, saepe eius.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit explicabo assumenda eligendi ex exercitationem harum deleniti quaerat beatae ducimus dolor voluptates magnam, reiciendis pariatur culpa tempore quibusdam quidem, saepe eius.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit explicabo assumenda eligendi ex exercitationem harum deleniti quaerat beatae ducimus dolor voluptates magnam, reiciendis pariatur culpa tempore quibusdam quidem, saepe eius.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit explicabo assumenda eligendi ex exercitationem harum deleniti quaerat beatae ducimus dolor voluptates magnam, reiciendis pariatur culpa tempore quibusdam quidem, saepe eius.</p>
-
-    </section>
-    <!--Section: About-->
-
-    <div class="divider-new">
-        <h2 class="h2-responsive wow fadeIn" data-wow-delay="0.2s">Submitting an entry</h2>
-    </div>
-
-
-
-</div>
 
 <script src="/js/particles.js"></script>
 <script src="/js/app.js"></script>
 
 
+<!-- About the journal-->
+<div class="container">
+
+  <div class="divider-new">
+    <h2 class="h2-responsive wow fadeIn" data-wow-delay="0.2s">About the journal</h2>
+  </div>
+
+  <!--Section: About-->
+  <section id="about" class="text-justify wow fadeIn" data-wow-delay="0.2s">
+    <p> 
+      <p>Despite significant advances in our communication technology, academic publication retains a model that is over two hundred years old. Monatliche Correspondenz was an early journal which assimilated letters from astronomers across Europe, and redistributed them in edited form through compiling the letters into volumes. Franz von Zach, the Hungarian astronomer performed the editing. In 1801 issues of Monatliche Correspondenz closely tracked the discovery, loss and rediscovery of the dwarf planet Ceres. It was through this rediscovery that Carl Friederich Gauss became famous.</p>
+
+<p>It was Franz von Zach himself that was able to recover the planet at the co-ordinates that Gauss predicted. But perhaps the most remarkable thing about the journal is that the discovery, loss of the planet, computation of its orbit and its rediscovery was carried out in a single volume within a single year at a time when Europe lacked good roads or canals or railways and was engaged in war. The volumes of Monatliche Correspondenz were presumably transported around Europe in postal satchels on the back of mules. And yet publication and communication was able to occur at such rates. Gauss took six weeks to compute the orbit. He invented a host of techniques to do so, including least squares, and eventually wrote up these ideas in Theoria motus in 1809.</p>
+
+<p>MC Notes is inspired by the observation that many of our publication processes have actually become slower since then. The original motivation for publication was communication, but after von Zach no other astronomer was able to perform the enormous labour of editing and collating the letters and eventually the journal failed. A new model for journal communication emerged involving peer review and editorial boards. This made journals more sustainable, and they also began to be used as a form of academic currency.</p>
+
+<p>MC Notes is a reimagining of the journal driven by trying to picture what von Zach would have done today with access to the modern tools of the internet. We have tried to create a sustainable model of submission based around Jupyter notebooks and Github. Our aim is for rapid turn around and communication of ideas. In a nod to our inspiration, MC Notes is named for Monatliche Correspondenze, with notes attempting to emphasise the informality of the communication. Work will be peer reviewed using the Github issues tracker.</p>
+  </p>
+    </section>
+    <!--Section: About-->
+
+    <div class="divider-new">
+      <h2 class="h2-responsive wow fadeIn" data-wow-delay="0.2s">Submitting an entry</h2>
+    </div>
+
+  </div>
 
 
+<!-- submitting an entry-->
 <div class='container'>
   <!-- about the submission process -->
   <div class='row'>
     <div class='container col-sm-6'>
       <h3 class = 'h3-responsive text-center'> About the submission process </h3>
-      <p class="text-justify">Submissions are made via pull requests from a
-        fork of the master branch of this
-        repository. The review process of the submissions </p>
-        <p class="text-justify"> The review process is completely open to follow
-          and interaction among
-          author and reviewers is highly encouraged.
-          The work presented here is meant to serve as a publication platform
-          promoting reproducible research. </p>
-        </div>
+      <p class="text-justify">
+      
+<p>Submissions are made via pull requests from a fork of he master branch of this
+repository.</p>
+
+<p>The review process is completely open to follow and interaction among
+author and reviewers is highly encouraged.</p>
+
+<p>The work presented here is meant to serve as a publication platform promoting reproducible research.</p>
+ </p>
+    </div>
         <!--process explained -->
 
         <div class='container col-sm-6'>
           <h3 class = 'h3-responsive text-center'> Submissions explained</h3>
-
 
           <div class="panel-group" id="accordion">
             <!--- panel start-->
@@ -211,25 +215,42 @@
                 </div>
                 <div id="collapse3" class="panel-collapse collapse">
                   <div class="panel-body">
-                    All the submissions should include the following documents:
-                    <ol>
-                      <li> <strong> notebook.ipynb </strong>: Jupyter notebook executable in Python 3.x.
-                        This notebook should be able to be run as a standalone instance (without user interaction).
-                        Figures generated as part of the analysis should be displayed in the
-                        notebook. </li>
-                        <li> <strong> requirements.yml </strong>: packages required to execute your Notebook.
-                          The use of <a href='https://conda.io/docs/using/envs.html'> Conda environments
-                          </a> is highly encouraged. An example of an appropriate 'requirements.yml' <fieldset>
-                            can be seen <a href = ''> here </a>.
-                          </li>
-                          <li> <strong> metadata.yml </strong>: Yaml file containing the metadata
-                            for your publication. This file will be used to add a DOI to your notebook
-                            for citation. An example can be seen <a href="" > here </a>.
-                            Optional entries are marked as <strong> Optional </strong> in the template provided.</li>
-                          </ol>
-                        </div>
-                      </div>
-                    </div>
+                    
+                    <p>All the submissions should include the following documents:</p>
+
+<ol>
+  <li>
+    <p><strong>notebook.ipynb</strong>: Jupyter notebook executable in Python 3.x.
+This notebook should be able to be run as a standalone instance (without user interaction).
+Figures generated as part of the analysis should be displayed in the
+notebook (avoid the generation of external image files such as .jpg, .npg, etc.).</p>
+  </li>
+  <li>
+    <p><strong>requirements.yml</strong>:  Yaml file containing the packages required to execute your Notebook.
+The use of <a href="https://conda.io/docs/using/envs.html"> Conda environments
+</a> is highly encouraged. An example of an appropriate <code class="highlighter-rouge">requirements.yml</code> file
+can be seen <a href=""> here </a>.</p>
+  </li>
+  <li>
+    <p><strong>metadata.yml</strong>: Yaml file containing the metadata
+for your publication. This file will be used to add a DOI to your notebook
+for citation. An example can be seen <a href=""> here </a>.
+Optional entries are marked as <em>Optional</em> in the template provided.</p>
+  </li>
+  <li>
+    <p><strong>bibliography.bib</strong> BibTeX file containing all the references included in your notebook (for information visit the [BibTeX website](http://www.bibtex.org.</p>
+  </li>
+</ol>
+
+<p>For a detailed description of the metadata file and options have a look at the
+<a href="http://developers.zenodo.org/#restapi-rep-meta">Zenodo API</a>.</p>
+
+<p><em><strong>No other files are allowed as part of the submission</strong></em> additional/accompanying scripts should
+be included in the notebook.</p>
+
+                  </div>
+                </div>
+              </div>
                     <!-- panel end-->
 
                     <!--- panel start-->
@@ -275,7 +296,7 @@
                               </div>
                               <div id="collapse4" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                  
+
                                   </div>
                                 </div>
                               </div>

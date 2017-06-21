@@ -10,27 +10,41 @@
 
 {% include hero_particles.html %}
 
-{{content}}
+<!-- About the journal-->
+<div class="container">
 
+  <div class="divider-new">
+    <h2 class="h2-responsive wow fadeIn" data-wow-delay="0.2s">About the journal</h2>
+  </div>
+
+  <!--Section: About-->
+  <section id="about" class="text-justify wow fadeIn" data-wow-delay="0.2s">
+    <p> {% capture my_include %}{% include /md_content/about.md%}{% endcapture %}
+      {{ my_include | markdownify}}  </p>
+    </section>
+    <!--Section: About-->
+
+    <div class="divider-new">
+      <h2 class="h2-responsive wow fadeIn" data-wow-delay="0.2s">Submitting an entry</h2>
+    </div>
+
+  </div>
+
+
+<!-- submitting an entry-->
 <div class='container'>
   <!-- about the submission process -->
   <div class='row'>
     <div class='container col-sm-6'>
       <h3 class = 'h3-responsive text-center'> About the submission process </h3>
-      <p class="text-justify">Submissions are made via pull requests from a
-        fork of the master branch of this
-        repository. The review process of the submissions </p>
-        <p class="text-justify"> The review process is completely open to follow
-          and interaction among
-          author and reviewers is highly encouraged.
-          The work presented here is meant to serve as a publication platform
-          promoting reproducible research. </p>
-        </div>
+      <p class="text-justify">{% capture text %}
+        {% include /md_content/submission.md%}{% endcapture %}
+      {{ text | markdownify}} </p>
+    </div>
         <!--process explained -->
 
         <div class='container col-sm-6'>
           <h3 class = 'h3-responsive text-center'> Submissions explained</h3>
-
 
           <div class="panel-group" id="accordion">
             <!--- panel start-->
@@ -67,25 +81,11 @@
                 </div>
                 <div id="collapse3" class="panel-collapse collapse">
                   <div class="panel-body">
-                    All the submissions should include the following documents:
-                    <ol>
-                      <li> <strong> notebook.ipynb </strong>: Jupyter notebook executable in Python 3.x.
-                        This notebook should be able to be run as a standalone instance (without user interaction).
-                        Figures generated as part of the analysis should be displayed in the
-                        notebook. </li>
-                        <li> <strong> requirements.yml </strong>: packages required to execute your Notebook.
-                          The use of <a href='https://conda.io/docs/using/envs.html'> Conda environments
-                          </a> is highly encouraged. An example of an appropriate 'requirements.yml' <fieldset>
-                            can be seen <a href = ''> here </a>.
-                          </li>
-                          <li> <strong> metadata.yml </strong>: Yaml file containing the metadata
-                            for your publication. This file will be used to add a DOI to your notebook
-                            for citation. An example can be seen <a href="" > here </a>.
-                            Optional entries are marked as <strong> Optional </strong> in the template provided.</li>
-                          </ol>
-                        </div>
-                      </div>
-                    </div>
+                    {% capture text %}{% include /md_content/files_inc.md%}{% endcapture %}
+                    {{ text | markdownify}}
+                  </div>
+                </div>
+              </div>
                     <!-- panel end-->
 
                     <!--- panel start-->
@@ -131,7 +131,7 @@
                               </div>
                               <div id="collapse4" class="panel-collapse collapse">
                                 <div class="panel-body">
-                                  
+
                                   </div>
                                 </div>
                               </div>
