@@ -58,14 +58,8 @@
                 </div>
                 <div id="collapseOne" class="panel-collapse collapse in">
                   <div class="panel-body">
-                    Fork the provided template from <a href=''> here </a> and use this
-                    forked version to work on.
-                    <br>
-                    Please note that <a href='http://blog.jupyter.org/2017/04/04/jupyter-notebook-5-0/'>
-                    the latest version Project Jupyter</a> only provides support
-                    for Python 3, hence those submitting notebooks using the Python kernel must
-                    ensure Python 3.x is used. 
-
+                    {% capture text %}{% include /md_content/first_steps.md%}{% endcapture %}
+                    {{ text | markdownify}}
                     </div>
                   </div>
                 </div>
