@@ -10,29 +10,26 @@
 <!-- Main content needs to be in a wrap for
 when the sidebar is displayed-->
 
-
-
 <!-- nav bar-->
 {% include nav.html %}
 
-<div class='wrap'>
   <div class="container-fluid">
     <div class="row">
 
 
-      <div class="col-sm-10 ">
+      <div class="col-md-10 col-md-offset-1">
         <div class = 'page-header'>
           <h1> {{page.title}} </h1>
         </div>
-        <main>
+
           {{content}}
-        </main>
+
       </div>
 
 
     </div>
   </div>
-</div>
+
 
 {% include footer.html %}
 
