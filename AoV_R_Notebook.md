@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: notebook
 title: "Analysis of variance"
 
 tags:

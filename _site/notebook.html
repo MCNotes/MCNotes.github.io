@@ -75,15 +75,17 @@
 </head>
 
 
-<!-- Scroller for TOC-->
+<!-- scroller for TOC-->
 <body data-spy="scroll" data-target="#toc">
 
 
-<!-- Main content needs to be in a wrap for
-when the sidebar is displayed-->
 
-<!-- nav bar-->
-<!-- Navigation -->
+<!--main content needs to be in a wrap for
+when the sidebar is displayed-->
+  <div class='wrap'>
+
+<!-- navbar -->
+  <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation"
     id = 'top_nav'>
         <div class="container">
@@ -115,18 +117,15 @@ when the sidebar is displayed-->
         <!-- /.container -->
     </nav>
 
-
-
-<div class="header">
-  <h1 class="header_logo">Analysis of variance</h1>
 </div>
-
-  <div class="container-fluid offset">
+<div class='wrap'>
+  <div class="container">
     <div class="row">
 
-
-      <div class="col-md-10 col-md-offset-1">
-        <h1 id="bad-day-2-anova">BAD DAY 2: ANOVA</h1>
+<!--- Main content--->
+      <div class="col-sm-8">
+        <main>
+          <h1 id="bad-day-2-anova">BAD DAY 2: ANOVA</h1>
 
 <h1 id="analysis-of-variance-anova-models">1. Analysis of variance: ANOVA models</h1>
 
@@ -963,29 +962,44 @@ Fligner-Killeen:med chi-squared = 2.6046, df = 1, p-value = 0.1066
 </code></pre>
 </div>
 
+        </main>
       </div>
 
-
+      <div class="col-sm-1">
+      </div>
+      <!-- TOC sidebar, which will move to the top on a small screen -->
+      <div class="col-sm-3 container-toc">
+        <nav id="toc" data-spy="affix" data-toggle="toc"></nav>
+      </div>
     </div>
   </div>
+</div>
+
+<label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+<div class='container'>
+  <div class='row'>
+    <div class="col-sm-8">
+    <!-- return to outline-->
+<a href = 'http://localhost:4000/2-outline/' class="btn btn-purple">
+  <i class="fa fa-magic left"></i>
+   outline </a>
 
 
+<!--download-->
+<a href="http://localhost:4000/notebooks/AoV_R_Notebook.ipynb" download="AoV_R_Notebook.ipynb" class="float" >
+<i class="fa fa-download my-float"></i>
+</a>
+<div class="label-container">
+<div class="label-text">If download does not start: right-click and
+                  'Download linked file as'</div>
+</div>
+<br>
 
-<!--Footer-->
-<footer class="page-footer center-on-small-only">
-<div id="gotop"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
-  <!--Copyright-->
-    <div class="footer-copyright">
-        <div class="container-fluid">
-            © 2017 Copyright: <a href="http://rse.shef.ac.uk"> RSE at Sheffield</a>
-
-        </div>
-    </div>
-    <!--/.Copyright-->
-
-</footer>
-<!--/.Footer-->
-
+    <br>
+  </div>
+  </div>
+</div>
 
 </body>
 
