@@ -1,3 +1,4 @@
+
 body{
   font-family: $base-font;
   overflow-x: hidden;
@@ -151,7 +152,7 @@ ul {
     height: 100px;
     box-shadow: 0 0 5px rgba(black, .2);
     margin-top: 60px;
-    background-color: inherit;
+    background-color: $primary-light;
     // when header.small also change page offset
     & ~ .offset {
       padding-top: 250px;
@@ -178,4 +179,29 @@ ul {
   margin-top: 0;
   padding-top: 250px;
   transition: .3s;
+}
+
+
+/** cont **/
+
+.container2 {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container2 {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container2 {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container2 {
+    width: 1170px;
+  }
 }

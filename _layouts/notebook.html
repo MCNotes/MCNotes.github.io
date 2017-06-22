@@ -7,45 +7,40 @@
 <body data-spy="scroll" data-target="#toc">
 
 
-
 <!--main content needs to be in a wrap for
 when the sidebar is displayed-->
   <div class='wrap'>
 
 <!-- navbar -->
   {% include nav.html %}
+  <div class="header">
+    <h1 class="header_logo">{{page.title}}</h1>
+  </div>
 </div>
+
 <div class='wrap'>
-  <div class="container">
+  <div class="container offset">
     <div class="row">
 
 <!--- Main content--->
-      <div class="col-sm-8">
+      <div class="col-sm-9">
         <main>
           {{content}}
         </main>
       </div>
 
-      <div class="col-sm-1">
-      </div>
+
       <!-- TOC sidebar, which will move to the top on a small screen -->
       <div class="col-sm-3 container-toc">
         <nav id="toc" data-spy="affix" data-toggle="toc"></nav>
       </div>
+
+
     </div>
   </div>
 </div>
 
-<label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
-<div class='container'>
-  <div class='row'>
-    <div class="col-sm-8">
-    {%include action_buttons.html%}
-    <br>
-  </div>
-  </div>
-</div>
 
 </body>
 

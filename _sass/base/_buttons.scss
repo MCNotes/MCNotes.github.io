@@ -11,7 +11,6 @@
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
-	box-shadow: 2px 2px 3px #999;
   font-size: 1.25em;
   &:hover{
     background-color: lighten($primary, 5%);
@@ -68,8 +67,8 @@ a.float:hover + div.label-container{
     background: $primary;
     color: white;
 		cursor: pointer;
-		box-shadow: bottom-shadow(3px), top-shadow(3px);  
-  }
+		box-shadow: bottom-shadow(3px), top-shadow(3px);
+  
 		&:hover {
       background-color: white;
       color: $primary-light;
