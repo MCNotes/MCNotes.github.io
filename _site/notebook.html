@@ -38,6 +38,7 @@
 <script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v0.4.1/dist/bootstrap-toc.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.3.0/js/mdb.min.js"></script>
 <script src="/js/custom-scripts.js"></script>
+<script src="/js/mdb.min.js"></script>
 
 <!-- github js-->
 <!-- Place this tag in your head or just before your close body tag. -->
@@ -83,7 +84,7 @@ when the sidebar is displayed-->
 
 <!-- nav bar-->
 <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-static-top scrolling-navbar" role="navigation"
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation"
     id = 'top_nav'>
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -115,16 +116,16 @@ when the sidebar is displayed-->
     </nav>
 
 
-  <div class="container-fluid">
+<div class="header">
+  <h1 class="header_logo">Analysis of variance</h1>
+</div>
+
+  <div class="container-fluid offset">
     <div class="row">
 
 
       <div class="col-md-10 col-md-offset-1">
-        <div class = 'page-header'>
-          <h1> Analysis of variance </h1>
-        </div>
-
-          <h1 id="bad-day-2-anova">BAD DAY 2: ANOVA</h1>
+        <h1 id="bad-day-2-anova">BAD DAY 2: ANOVA</h1>
 
 <h1 id="analysis-of-variance-anova-models">1. Analysis of variance: ANOVA models</h1>
 
@@ -960,7 +961,6 @@ data:  npk$yield by npk$K
 Fligner-Killeen:med chi-squared = 2.6046, df = 1, p-value = 0.1066
 </code></pre>
 </div>
-
 
       </div>
 

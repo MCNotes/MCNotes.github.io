@@ -13,17 +13,16 @@ when the sidebar is displayed-->
 <!-- nav bar-->
 {% include nav.html %}
 
-  <div class="container-fluid">
+<div class="header">
+  <h1 class="header_logo">{{page.title}}</h1>
+</div>
+
+  <div class="container-fluid offset">
     <div class="row">
 
 
       <div class="col-md-10 col-md-offset-1">
-        <div class = 'page-header'>
-          <h1> {{page.title}} </h1>
-        </div>
-
-          {{content}}
-
+        {{content}}
       </div>
 
 
