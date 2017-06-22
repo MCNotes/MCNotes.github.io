@@ -15,7 +15,7 @@ for your publication. This file will be used to add a DOI to your notebook
 for citation. An example can be seen <a href="" > here </a>.
 Optional entries are marked as _Optional_ in the template provided.
 
-4. **bibliography.bib** BibTeX file containing all the references included in your notebook (for information visit the [BibTeX website](http://www.bibtex.org.
+4. **bibliography.bib**: BibTeX file containing all the references included in your notebook (for information visit the [BibTeX website](http://www.bibtex.org).
 
 For a detailed description of the metadata file and options have a look at the
 [Zenodo API](http://developers.zenodo.org/#restapi-rep-meta).
