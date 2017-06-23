@@ -113,6 +113,8 @@ footer.page-footer{
   color: $white;
   font-family: $title-font;
   width: 100%;
+  z-index: 1;
+  margin-top: 3em;
 }
 footer.page-footer .footer-copyright {
   background-color: $primary-dark;
