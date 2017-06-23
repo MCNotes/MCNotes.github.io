@@ -83,3 +83,26 @@ td{
 .table-striped > tbody > tr:nth-of-type(odd) {
   background-color: $gray-lighter;
 }
+
+
+/**** sticky ***/
+
+.sticky {
+    position:fixed;
+    padding-top: 60px;
+}
+.menu {
+    padding-top: 250px;
+    background:#428bca;
+    color:#fff;
+    height:50px;
+    line-height:30px;
+    letter-spacing:1px;
+    width:100%;
+    z-index:1;
+}
+
+
+.menu-padding {
+    padding-top:40px;
+}

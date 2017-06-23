@@ -113,26 +113,28 @@ ul {
 
 
 /*** page-header ***/
+/** note this header starts as a big header and shrinks upon scrolling **/
 
 .header {
   position: fixed;
   width: 100%;
-  height: 180px;
+  height: 200px;
   font-weight: normal;
   text-align: center;
   padding-left: 40px;
   background-color: $primary-light;
-  transition: .3s;
+  transition: 0.3s;
 
   /* animation magic */
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s  ;
   z-index: 1;
+  background-image: url('../images/network.jpg');
 
   // header shrinks when .small added to .header
   &.small {
     height: 100px;
-    box-shadow: 0 0 5px rgba(black, .2);
+    box-shadow: 0 0 10px rgba(black, .2);
     margin-top: 60px;
     background-color: $primary-light;
     // when header.small also change page offset
@@ -161,4 +163,24 @@ ul {
   margin-top: 0;
   padding-top: 230px;
   transition: .3s;
+}
+
+/** page header -no scroll **/
+
+
+.header-fixed {
+  position: fixed;
+  width: 100%;
+  height: 200px;
+  font-weight: normal;
+  text-align: center;
+  padding-left: 40px;
+  background-color: $primary-light;
+  transition: 0.3s;
+
+  /* animation magic */
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s  ;
+  z-index: 1;
+  background-image: url('../images/network.jpg');
 }
