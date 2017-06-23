@@ -71,12 +71,12 @@
 <body data-spy="scroll" data-target="#toc">
 
 
-<!--main content needs to be in a wrap for
-when the sidebar is displayed-->
+  <!--main content needs to be in a wrap for
+  when the sidebar is displayed-->
   <div class='wrap'>
 
-<!-- navbar -->
-  <!-- Navigation -->
+    <!-- navbar -->
+    <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation"
     id = 'top_nav'>
         <div class="container">
@@ -108,19 +108,19 @@ when the sidebar is displayed-->
         <!-- /.container -->
     </nav>
 
-  <div class="header">
-    <h1 class="header_logo">Analysis of variance</h1>
+    <div class="header">
+      <h1 class="header_logo">Analysis of variance</h1>
+    </div>
   </div>
-</div>
 
-<div class='wrap'>
-  <div class="container offset">
-    <div class="row">
+  <div class='wrap'>
+    <div class="container offset">
+      <div class="row">
 
-<!--- Main content--->
-      <div class="col-sm-9">
-        <main>
-          <h1 id="bad-day-2-anova">BAD DAY 2: ANOVA</h1>
+        <!--- Main content--->
+        <div class="col-sm-9">
+          <main>
+            <h1 id="bad-day-2-anova">BAD DAY 2: ANOVA</h1>
 
 <h1 id="analysis-of-variance-anova-models">1. Analysis of variance: ANOVA models</h1>
 
@@ -467,23 +467,51 @@ determines the groups, and the function you wish to apply to each of the groups.
 <p><br /></p>
 <font color="#00bcd4"> In [18]: </font>
 
-        </main>
+          </main>
+        </div>
+
+
+        <!-- Side bar with additional features -->
+        <div class="col-sm-2 col-xs-9 col-md-3 col-lg-3">
+
+          <!-- extra tabs -->
+            <div id="articleTabs" class="container" data-spy='affix'>
+              <ul class="nav nav-tabs">
+                <li class="active">
+                  <a  href="#toc-tab" data-toggle="tab">Contents</a>
+                </li>
+                <li><a href="#rec-tab" data-toggle="tab">References</a>
+                </li>
+                <li><a href="#com-tab" data-toggle="tab">Comments</a>
+                </li>
+              </ul>
+
+              <!--tabs content -->
+              <div class="tab-content ">
+                    <div class="tab-pane active" id="toc-tab">
+                      <nav id="toc"  data-toggle="toc"></nav>
+                    </div>
+                    <div class="tab-pane" id="rec-tab">
+                      References here
+                    </div>
+                    <div class="tab-pane" id="com-tab">
+                      Reviewers comment
+                    </div>
+                  </div>
+
+
+              </div>
+
+        </div>
+
+
+        </div>
       </div>
-
-
-      <!-- TOC sidebar, which will move to the top on a small screen -->
-      <div class="col-sm-3 container-toc">
-        <nav id="toc" data-spy="affix" data-toggle="toc"></nav>
-      </div>
-
-
     </div>
-  </div>
-</div>
 
 
 
-</body>
+  </body>
 
 
-</html>
+  </html>
