@@ -1,7 +1,7 @@
 # Site settings
 title: MC notes
 description: Open Data Science built upon Jupyter Notebooks
-url: "http://mc-notes.github.io" # the base hostname & protocol for your site
+url: "http://mcnotes.github.io" # the base hostname & protocol for your site
 
 
 # About
