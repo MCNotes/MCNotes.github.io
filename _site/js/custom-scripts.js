@@ -35,24 +35,16 @@ function navbarScroll() {
   }
 }
 
-
-$(document).ready(function () {
-
-    var menu = $('.menu');
-    var origOffsetY = menu.offset().top;
-
-    function scroll() {
-        if ($(window).scrollTop() >= origOffsetY) {
-            $('.menu').addClass('sticky');
-            $('.content').addClass('menu-padding');
-        } else {
-            $('.menu').removeClass('sticky');
-            $('.content').removeClass('menu-padding');
-        }
-
-
-    }
-
-    document.onscroll = scroll;
-
+/*** sticky header for notebooks ***/
+$(document).scroll(function() {
+  navbarScroll();
 });
+
+function navbarScroll() {
+  var y = window.scrollY;
+  if (y > 10) {
+    $('.menu').addClass('fix-top');
+  } else if (y < 10) {
+    $('.menu').removeClass('fix-top');
+  }
+}

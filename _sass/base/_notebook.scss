@@ -85,24 +85,73 @@ td{
 }
 
 
-/**** sticky ***/
-
-.sticky {
-    position:fixed;
-    padding-top: 60px;
+/**** sticky toolbar ***/
+.header.nb {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  &.fix-top{
+    background: transparent;
+    &.offset_nb{
+      padding-top: 100px;
+    }
+  }
 }
+
+.offset_nb {
+  margin-top: 0;
+  padding-top: 60px;
+  transition: .3s;
+}
+
 .menu {
-    padding-top: 250px;
-    background:#428bca;
-    color:#fff;
-    height:50px;
-    line-height:30px;
-    letter-spacing:1px;
-    width:100%;
+    position:absolute;
+    top: 200px;
+    background: $primary-light;
+    font-family: $title-font;
+    height: 50px;
+    width: 100%;
+    border-bottom: solid 1px #ddd;
     z-index:1;
+    &.fix-top{
+      position: fixed;
+      top: 60px;
+    }
 }
 
+.menu-title{
+  float: left;
+  padding: 19.5px 15px;
+  font-size: 1em;
+  line-height: 16px;
+  color: $white;
+}
 
-.menu-padding {
-    padding-top:40px;
+.menu-icon{
+  color: $white;
+  vertical-align: middle;
+  padding: 25px;
+  float: left;
+  font-size: 1.5em;
+  line-height: 30px;
+  &.hover{
+    background-color: inherit;
+  }
+}
+
+.menu .navbar-nav > li > a:hover,
+.menu .navbar-nav > li > a:focus {
+  background-color: rgba(255,255,255,.1);
+}
+@media (min-width: 768px) {
+  .menu-left {
+    float: left !important;
+  }
+  .menu-right {
+    float: right !important;
+    margin-right: 30px;
+  }
+  .menu-right ~ .menu-right {
+    margin-right: 0;
+  }
 }
