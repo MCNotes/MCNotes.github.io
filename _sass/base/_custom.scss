@@ -129,23 +129,28 @@ ul {
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s  ;
   z-index: 1;
-  background-image: url('../images/network.jpg');
+  background:  center no-repeat $primary;
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.25)
+    ),
+    url('../images/219.jpg');
+  background-size: 100%;
 
   // header shrinks when .small added to .header
   &.small {
     height: 100px;
     box-shadow: 0 0 10px rgba(black, .2);
     margin-top: 60px;
-    background-color: $primary-light;
     // when header.small also change page offset
     & ~ .offset {
       padding-top: 250px;
     }
     // when header.small change logo pad & font size
     .header_logo {
-      padding-top: 40px;
+      margin-top: 40px;
       font-size: 2em;
-      text-shadow: none;
     }
   }
 }
@@ -153,10 +158,13 @@ ul {
 .header_logo {
   font-family: $title-font;
   margin: 0;
-  padding-top: 100px;
+  margin-top: 100px;
   font-size: 3em;
   transition: .3s;
   color: $white;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 4px 8px;
+  display: inline-block;
 }
 
 .offset {
@@ -175,12 +183,11 @@ ul {
   font-weight: normal;
   text-align: center;
   padding-left: 40px;
-  background-color: $primary-light;
   transition: 0.3s;
 
   /* animation magic */
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s  ;
   z-index: 1;
-  background-image: url('../images/network.jpg');
+  background-image: url('../images/219.jpg');
 }

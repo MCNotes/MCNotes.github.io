@@ -23,14 +23,14 @@ $(function(){
 
 /*** page header ***/
 $(document).scroll(function() {
-  navbarScroll();
+  downScroll();
 });
 
-function navbarScroll() {
-  var y = window.scrollY;
-  if (y > 10) {
+function downScroll() {
+  var h = window.scrollY;
+  if (h > 10) {
     $('.header').addClass('small');
-  } else if (y < 10) {
+  } else if (h < 10) {
     $('.header').removeClass('small');
   }
 }
