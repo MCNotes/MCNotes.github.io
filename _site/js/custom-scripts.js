@@ -23,36 +23,28 @@ $(function(){
 
 /*** page header ***/
 $(document).scroll(function() {
+  downScroll();
+});
+
+function downScroll() {
+  var h = window.scrollY;
+  if (h > 10) {
+    $('.header').addClass('small');
+  } else if (h < 10) {
+    $('.header').removeClass('small');
+  }
+}
+
+/*** sticky header for notebooks ***/
+$(document).scroll(function() {
   navbarScroll();
 });
 
 function navbarScroll() {
   var y = window.scrollY;
   if (y > 10) {
-    $('.header').addClass('small');
+    $('.menu').addClass('fix-top');
   } else if (y < 10) {
-    $('.header').removeClass('small');
+    $('.menu').removeClass('fix-top');
   }
 }
-
-
-$(document).ready(function () {
-
-    var menu = $('.menu');
-    var origOffsetY = menu.offset().top;
-
-    function scroll() {
-        if ($(window).scrollTop() >= origOffsetY) {
-            $('.menu').addClass('sticky');
-            $('.content').addClass('menu-padding');
-        } else {
-            $('.menu').removeClass('sticky');
-            $('.content').removeClass('menu-padding');
-        }
-
-
-    }
-
-    document.onscroll = scroll;
-
-});

@@ -10,11 +10,6 @@ nav{
   padding: 0;
   width: 100%;
 }
-.scrolling-navbar {
-    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
-    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
-    transition: background .5s ease-in-out, padding .5s ease-in-out;
-}
 
 .navbar{
   border-radius: 0;
@@ -39,7 +34,8 @@ nav{
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: $secondary;
+  font-weight: bold;
+  color: $white;
   background-color: transparent;
 }
 
@@ -55,7 +51,6 @@ nav{
 .navbar-default .navbar-form {
   border-color: $secondary-light;
 }
-
 
 /*** scroller icon pure css **/
 .icon-scroll,
@@ -104,8 +99,6 @@ nav{
     font-size: 0.75em;
     text-transform: uppercase;
 }
-
-
 
 /*** footer ***/
 footer.page-footer{

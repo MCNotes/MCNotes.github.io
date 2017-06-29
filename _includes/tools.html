@@ -1,5 +1,19 @@
-<div class="header">
-  <h1 class="header_logo">{{page.title}}</h1>
+<div class="header nb">
+  <h1 class="header_logo">{{page.title}}</h1> <br>
+  <h4 class='author'> Author: {{page.author}} </h4>
+
 </div>
 
- <div class="menu">home | services | contact</div>
+ <div class="menu" >
+  <div class='container'>
+   <div class='menu-title'> {{page.title}} </div>
+
+   <ul class="nav navbar-nav menu-right">
+    <li>
+      <a href="{{site.url}}{{site.baseurl}}/notebooks/{{page.nb}}" download="{{page.nb}}"
+      class="menu-icon" >
+      <i class="fa fa-download" aria-hidden="true"></i></a>
+    </li>
+  </ul>
+ </div>
+</div>

@@ -67,6 +67,7 @@ a.float:hover + div.label-container{
     background: $primary;
     color: white;
 		cursor: pointer;
+		border-radius: 2px;
 		box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
 		&:hover {
       background-color: white;

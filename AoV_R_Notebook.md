@@ -1,7 +1,7 @@
 ---
 layout: notebook
 title: "Analysis of variance"
-
+author: T.Tania
 tags:
     - Day2
 nb: "AoV_R_Notebook.ipynb"
