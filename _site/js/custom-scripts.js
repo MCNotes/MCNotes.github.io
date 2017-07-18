@@ -57,3 +57,10 @@ function navbarScroll() {
    }
 
  });
+
+ $(document).ready(function() {
+
+   if(window.location.href.indexOf('#myModal2') != -1) {
+     $('#myModal2').modal('show');
+   }
+ });

@@ -194,9 +194,7 @@ your submission.</p>
 
 <p><a href="http://blog.jupyter.org/2017/04/04/jupyter-notebook-5-0/">Project Jupyter</a>
 currently provides support for over 80 kernels.
-You are welcome to use your preferred one for your submission.
-Please make sure you include the appropriate kernel information along with your metadata
-(see below).</p>
+You are welcome to use your preferred one for your submission.</p>
 
 <p><strong>Python users</strong>: The latest version of the Jupyter notebooks only
 provides support for Python 3, hence those submitting notebooks using the Python kernel must
@@ -245,7 +243,7 @@ The use of <a href="https://conda.io/docs/using/envs.html"> Conda environments
 </ol>
 
 <p><!-- trigger modal-->
-  <a class="tab" data-toggle="modal" data-target="#myModal"> See example enviroment </a></p>
+<a class="tab" data-toggle="modal" data-target="#myModal"> See example enviroment </a></p>
 
 <!-- Modal -->
 <div class="modal" id="myModal" tabindex="-1" role="alert" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -281,19 +279,55 @@ The use of <a href="https://conda.io/docs/using/envs.html"> Conda environments
 </div>
 
 <ol>
-  <li>
-    <p><strong>metadata.yml</strong>: Yaml file containing the metadata
+  <li><strong>metadata.yml</strong>: Yaml file containing the metadata
 for your publication. This file will be used to add a DOI to your notebook
-for citation. An example can be seen <a href=""> here </a>.
-Optional entries are marked as <em>Optional</em> in the template provided.</p>
-  </li>
-  <li>
-    <p><strong>bibliography.bib</strong>: BibTeX file containing all the references included in your notebook (for information visit the <a href="http://www.bibtex.org">BibTeX website</a>.</p>
-  </li>
+for citation.
+Optional entries are marked as <em>Optional</em> in the template provided.</li>
+</ol>
+
+<!-- trigger modal-->
+<p><a class="tab" data-toggle="modal" data-target="#myModal2"> See example metadata</a></p>
+
+<!-- Modal -->
+<div class="modal" id="myModal2" tabindex="-1" role="alert" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+      </button>
+    </div>
+    <div class="modal-body">
+    
+    
+<figure class="highlight"><pre><code class="language-yml" data-lang="yml">    
+<span class="s">title</span><span class="pi">:</span> <span class="s">Title of Notebook</span>
+<span class="s">creators</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="pi">{</span><span class="s1">'</span><span class="s">name'</span><span class="pi">:</span> <span class="s2">"</span><span class="s">last,</span><span class="nv"> </span><span class="s">first"</span><span class="pi">,</span> <span class="s1">'</span><span class="s">affiliation'</span><span class="pi">:</span> <span class="s1">'</span><span class="s">university</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">...'</span><span class="pi">}</span>
+  <span class="pi">-</span> <span class="pi">{</span><span class="s1">'</span><span class="s">name'</span><span class="pi">:</span> <span class="s2">"</span><span class="s">last,</span><span class="nv"> </span><span class="s">first"</span><span class="pi">,</span> <span class="s1">'</span><span class="s">affiliation'</span><span class="pi">:</span> <span class="s1">'</span><span class="s">university</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">...'</span><span class="pi">}</span>
+  <span class="s">...</span>
+<span class="s">description</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Short</span><span class="nv"> </span><span class="s">description</span><span class="nv"> </span><span class="s">(abstract)</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">notebook."</span>
+<span class="s">keywords</span><span class="pi">:</span> <span class="pi">[</span><span class="s1">'</span><span class="s">keyword1'</span><span class="pi">,</span> <span class="s1">'</span><span class="s">keyword2'</span><span class="pi">,</span> <span class="nv">...</span> <span class="pi">]</span> <span class="c1"># Optional</span>
+<span class="s">contributors</span><span class="pi">:</span> <span class="c1"># Optional</span>
+  <span class="pi">-</span> <span class="pi">{</span><span class="s1">'</span><span class="s">name'</span><span class="pi">:</span> <span class="s2">"</span><span class="s">last,</span><span class="nv"> </span><span class="s">first"</span><span class="pi">,</span> <span class="s1">'</span><span class="s">type'</span><span class="pi">:</span> <span class="s1">'</span><span class="s">DataCollector'</span><span class="pi">,</span> <span class="s1">'</span><span class="s">affiliation'</span><span class="pi">:</span> <span class="s1">'</span><span class="s">university</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">...'</span><span class="pi">}</span>
+  <span class="pi">-</span> <span class="pi">{</span><span class="s1">'</span><span class="s">name'</span><span class="pi">:</span> <span class="s2">"</span><span class="s">last,</span><span class="nv"> </span><span class="s">first"</span><span class="pi">,</span> <span class="s1">'</span><span class="s">type'</span><span class="pi">:</span> <span class="s1">'</span><span class="s">ContactPerson'</span><span class="pi">,</span> <span class="s1">'</span><span class="s">affiliation'</span><span class="pi">:</span> <span class="s1">'</span><span class="s">university</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">...'</span><span class="pi">}</span>
+<span class="s">grants</span><span class="pi">:</span> <span class="c1"># Optional</span>
+  <span class="pi">-</span> <span class="s1">'</span><span class="s">id':'&lt;FP7 grant id&gt;'</span>
+
+    </code></pre></figure>
+
+    </div>
+  </div>
+</div>
+</div>
+
+<ol>
+  <li><strong>bibliography.bib</strong>: BibTeX file containing all the references included in your notebook (for information visit the <a href="http://www.bibtex.org">BibTeX website</a>.</li>
 </ol>
 
 <p>For a detailed description of the metadata file and options have a look at the
-<a href="http://developers.zenodo.org/#restapi-rep-meta">Zenodo API</a>.</p>
+<a href="http://developers.zenodo.org/#restapi-rep-meta">Zenodo API</a> and
+<a href="http://developers.zenodo.org/#representation">Deposit metadata</a>.</p>
 
 <p><em><strong>No other files are allowed as part of the submission</strong></em> additional/accompanying scripts should
 be included in the notebook.</p>
@@ -349,7 +383,8 @@ at the end of the notebook in a separate cell with the heading <em>References</e
                   <div id="collapse4" class="panel-collapse collapse">
                     <div class="panel-body">
                       
-                      <p>Your data should be publicly available via an URL (e.g. via FigShare, ORDA) and should not be added to your submission as a separate file (e.g. csv, txt, xml, json).</p>
+                      <p>Your data should be publicly available via an URL (e.g. via FigShare, ORDA) and should not be added to your submission as a separate file (e.g. .csv, .txt, .xml, .json).
+Any data accessed via the notebooks should be done by direct download (request) of the url.</p>
 
 <p>We highly encourage that your data has its own DOI for appropriate referencing.</p>
 
