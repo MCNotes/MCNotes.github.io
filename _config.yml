@@ -22,6 +22,8 @@ exclude:
   - replace.py
   - Gemfile*
   - vendor
+  - travis.yml
+  - vendor
 
 # to ensure the links work properly
 permalink: pretty
