@@ -194,7 +194,9 @@ your submission.</p>
 
 <p><a href="http://blog.jupyter.org/2017/04/04/jupyter-notebook-5-0/">Project Jupyter</a>
 currently provides support for over 80 kernels.
-You are welcome to use your preferred on for your submission.</p>
+You are welcome to use your preferred one for your submission.
+Please make sure you include the appropriate kernel information along with your metadata
+(see below).</p>
 
 <p><strong>Python users</strong>: The latest version of the Jupyter notebooks only
 provides support for Python 3, hence those submitting notebooks using the Python kernel must
@@ -232,14 +234,53 @@ ensure Python 3.x is used.</p>
     <p><strong>notebook.ipynb</strong>: Jupyter notebook executable in Python 3.x.
 This notebook should be able to be run as a standalone instance (without user interaction).
 Figures generated as part of the analysis should be displayed in the
-notebook (avoid the generation of external image files such as .jpg, .npg, etc.).</p>
+notebook (avoid the generation of external image files such as .jpg, .npg, etc.). You can use
+any name for your notebook (please avoid using spaces).</p>
   </li>
   <li>
     <p><strong>requirements.yml</strong>:  Yaml file containing the packages required to execute your Notebook.
 The use of <a href="https://conda.io/docs/using/envs.html"> Conda environments
-</a> is highly encouraged. An example of an appropriate <code class="highlighter-rouge">requirements.yml</code> file
-can be seen <a href=""> here </a>.</p>
+</a> is highly encouraged. Alternatively, a <em>requirements.text</em> file can be accepted.</p>
   </li>
+</ol>
+
+<p><!-- trigger modal-->
+  <a class="tab" data-toggle="modal" data-target="#myModal"> See example enviroment </a></p>
+
+<!-- Modal -->
+<div class="modal" id="myModal" tabindex="-1" role="alert" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+        </button>
+      </div>
+      <div class="modal-body">
+      
+      
+<figure class="highlight"><pre><code class="language-yml" data-lang="yml">      
+<span class="s">name</span><span class="pi">:</span> <span class="s">myenv</span>
+
+<span class="s">dependencies</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="s">python=3.6</span>
+  <span class="pi">-</span> <span class="s">numpy</span>
+  <span class="pi">-</span> <span class="s">matplotlib</span>
+  <span class="pi">-</span> <span class="s">dill</span>
+  <span class="pi">-</span> <span class="s">pandas</span>
+  <span class="pi">-</span> <span class="s">partd</span>
+  <span class="pi">-</span> <span class="s">bokeh</span>
+  <span class="pi">-</span> <span class="s">pip</span><span class="pi">:</span>
+    <span class="pi">-</span> <span class="s">git+https://github.com/blaze/dask.git#egg=dask[complete]</span>
+
+      </code></pre></figure>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<ol>
   <li>
     <p><strong>metadata.yml</strong>: Yaml file containing the metadata
 for your publication. This file will be used to add a DOI to your notebook

@@ -98,8 +98,20 @@ nav{
     margin: -10px -15px;
     font-size: 0.75em;
     text-transform: uppercase;
+    &:hover{
+      color: $white;
+      text-decoration: underline;
+    }
 }
 
+.panel-default{
+  border-radius: 0px!important;
+  border-color: $primary-light;
+  .panel-heading{
+  background-color: $primary-light;
+  border-radius: 0px;
+  color: $white;}
+}
 /*** footer ***/
 footer.page-footer{
   background-color: $primary;

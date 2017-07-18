@@ -15,7 +15,8 @@ body{
 
 /*** Links ***/
 a {
-  color: $secondary-light;
+  color: darken($secondary, 5%);
+  font-weight: bold;
   text-decoration: none;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent; }
@@ -190,4 +191,22 @@ ul {
   -moz-transition: all 0.4s  ;
   z-index: 1;
   background-image: url('../images/219.jpg');
+}
+
+
+/*** indent ***/
+.tab{
+  margin-left: 40px;
+}
+
+
+/*** modal ***/
+.modal {
+  text-align: left;
+  top: 50%;
+}
+.modal-content {
+  border: none;
+  border-radius: 2px;
+      box-shadow: 0 16px 28px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21);
 }

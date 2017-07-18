@@ -4,9 +4,10 @@ description: Open Data Science built upon Jupyter Notebooks
 url: "http://mcnotes.github.io" # the base hostname & protocol for your site
 
 
-# About
-author:
-  name: Tania Allard
+# github
+username: trallard
+repo:     MCNotes
+branch:   master
 
 
 # Build settings
@@ -19,6 +20,8 @@ exclude:
   - jekyll.py
   - jekyll.tpl
   - replace.py
+  - Gemfile*
+  - vendor
 
 # to ensure the links work properly
 permalink: pretty
@@ -32,3 +35,7 @@ gems:
 sass:
   style: compressed
   sass_dir: _sass
+
+# jekyll source/destination
+source: .
+destination: _site

@@ -21,7 +21,7 @@ $(function(){
 });
 
 
-/*** page header ***/
+// page header
 $(document).scroll(function() {
   downScroll();
 });
@@ -35,7 +35,7 @@ function downScroll() {
   }
 }
 
-/*** sticky header for notebooks ***/
+// sticky header for notebooks
 $(document).scroll(function() {
   navbarScroll();
 });
@@ -48,3 +48,12 @@ function navbarScroll() {
     $('.menu').removeClass('fix-top');
   }
 }
+
+ //Modal script
+ $(document).ready(function() {
+
+   if(window.location.href.indexOf('#myModal') != -1) {
+     $('#myModal').modal('show');
+   }
+
+ });
