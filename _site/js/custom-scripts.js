@@ -28,9 +28,9 @@ $(document).scroll(function() {
 
 function downScroll() {
   var h = window.scrollY;
-  if (h > 10) {
+  if (h > 200) {
     $('.header').addClass('small');
-  } else if (h < 10) {
+  } else if (h < 200) {
     $('.header').removeClass('small');
   }
 }
@@ -42,10 +42,12 @@ $(document).scroll(function() {
 
 function navbarScroll() {
   var y = window.scrollY;
-  if (y > 10) {
+  if (y > 140) {
     $('.menu').addClass('fix-top');
-  } else if (y < 10) {
+    $('.verticalLine').addClass('fix-tabs');
+  } else if (y < 200) {
     $('.menu').removeClass('fix-top');
+    $('.verticalLine').removeClass('fix-tabs');
   }
 }
 
