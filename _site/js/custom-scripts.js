@@ -44,10 +44,8 @@ function navbarScroll() {
   var y = window.scrollY;
   if (y > 140) {
     $('.menu').addClass('fix-top');
-    $('.verticalLine').addClass('fix-tabs');
   } else if (y < 200) {
     $('.menu').removeClass('fix-top');
-    $('.verticalLine').removeClass('fix-tabs');
   }
 }
 

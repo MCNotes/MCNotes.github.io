@@ -182,4 +182,13 @@ td{
 	border-radius: .25em;
   position: fixed;
   top: 30%;
+  right: 1%;
+}
+
+@media (max-width: 600px) {
+    .well2 {
+        position: relative;
+        width: 100%;
+        height: 35px;
+    }
 }
