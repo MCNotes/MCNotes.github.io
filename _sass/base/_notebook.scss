@@ -10,20 +10,22 @@ a:focus, .nav-tabs > li.active > a:hover{
 }
 
 .nav-tabs > li > a {
-  border: none; color: #666;
-  font-size: 1.2em;
+  border: none;
+  color: lighten(#666, 50%);
+  font-size: 1.35em;
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li > a:hover {
   border: none;
-  color: #4285F4 !important;
+  color: $secondary-light !important;
   background: transparent;
+  border-radius: 0px!important;
 }
 
 .nav-tabs > li > a::after {
   content: "";
-  background: #4285F4;
-  height: 2px; position: absolute;
+  background: $secondary;
+  height: 3px; position: absolute;
   width: 100%; left: 0px; bottom: -1px;
   transition: all 250ms ease 0s;
   transform: scale(0);
@@ -43,6 +45,8 @@ a:focus, .nav-tabs > li.active > a:hover{
 }
 .tab-content{
   padding:10px;
+  color: $white;
+  font-size: 1.2em;
 }
 
 
@@ -53,15 +57,11 @@ a:focus, .nav-tabs > li.active > a:hover{
 }
 
 .verticalLine {
-  border-left: 2px solid #ddd;
-  height: 80vh;
-  opacity: 0.99;
+  display: block;
+  width: 100%;
+  height: auto;
   padding: 0 ;
   margin: 0;
-  &.fix-tabs{
-    position: fixed;
-    top: 120px;
-  }
 }
 
 /*** images ***/
@@ -172,4 +172,15 @@ td{
   .menu-right ~ .menu-right {
     margin-right: 0;
   }
+}
+
+.well2{
+  border-color: $gray-lighter;
+  background: lighten($gray-darker, 5%);
+  transition: transform .3s ease-out;
+  box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, .1);
+	border-radius: .25em;
+  position: fixed;
+  top: 30%;
+  right: 1%;
 }
