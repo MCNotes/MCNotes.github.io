@@ -13,7 +13,7 @@ nav[data-toggle='toc']{
 nav[data-toggle='toc'] .nav > li > a {
   display: block;
   padding: 0.5rem 1rem;
-  font-size: 1.0em;
+  font-size: inherit;
   font-weight: 500;
   color: lighten(#666, 50%);
 }
