@@ -13,8 +13,8 @@ nav[data-toggle='toc']{
 nav[data-toggle='toc'] .nav > li > a {
   display: block;
   padding: 0.5rem 1rem;
-  font-size: inherit;
   font-weight: 500;
+  font-size: 0.9em;
   color: lighten(#666, 50%);
 }
 nav[data-toggle='toc'] .nav > li > a:hover,
@@ -44,7 +44,7 @@ nav[data-toggle='toc'] .nav .nav > li > a {
   padding-top: 1px;
   padding-bottom: 1px;
   padding-left: 30px;
-  font-size: 0.9em;
+  font-size: 0.7em;
   font-weight: normal;
 }
 nav[data-toggle='toc'] .nav .nav > li > a:hover,

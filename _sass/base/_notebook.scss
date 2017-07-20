@@ -174,6 +174,7 @@ td{
   }
 }
 
+/*** wekk for floating toc ***/
 .well2{
   border-color: $gray-lighter;
   background: lighten($gray-darker, 5%);
@@ -191,4 +192,14 @@ td{
         width: 100%;
         height: 35px;
     }
+}
+
+
+/*** dislexia friendly***/
+.nb_well{
+  background-color: $gray-lighter;
+  &.dislexia{
+    background-color: #fdfae3!important;
+    font-size: 1.5em;
+  }
 }
