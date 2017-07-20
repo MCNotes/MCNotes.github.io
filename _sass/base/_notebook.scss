@@ -90,6 +90,8 @@ td{
 
 
 /**** sticky toolbar ***/
+
+/** Big title with image-> scrolls up **/
 .header.nb {
   position: relative;
   width: 100%;
@@ -120,6 +122,8 @@ td{
   transition: .3s;
 }
 
+
+/*** small menu**/
 .menu {
     position:absolute;
     top: 200px;
@@ -144,7 +148,14 @@ td{
   text-transform:uppercase;
 }
 
-
+.author{
+  padding: 20px 15px;
+  font-size: 1em;
+  line-height: 16px;
+  color: lighten(#666, 50%);
+  background: transparent;
+  font-style: normal;
+}
 
 .menu-icon{
   color: $white;
@@ -157,9 +168,15 @@ td{
   }
 }
 
+.navbar-nav2 > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 25px;
+}
+
 .menu .navbar-nav > li > a:hover,
 .menu .navbar-nav > li > a:focus {
-  background-color: rgba(255,255,255,.1);
+  background: lighten($gray-darker, 15%);
 }
 @media (min-width: 768px) {
   .menu-left {
@@ -174,9 +191,9 @@ td{
   }
 }
 
+
 /*** wekk for floating toc ***/
 .well2{
-  border-color: $gray-lighter;
   background: lighten($gray-darker, 5%);
   transition: transform .3s ease-out;
   box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, .1);
@@ -197,9 +214,5 @@ td{
 
 /*** dislexia friendly***/
 .nb_well{
-  background-color: $gray-lighter;
-  &.dislexia{
-    background-color: #fdfae3!important;
-    font-size: 1.5em;
-  }
+  border: solid 2px lighten($gray-darker, 50%);
 }

@@ -64,9 +64,3 @@ function navbarScroll() {
      $('#myModal2').modal('show');
    }
  });
-
-
- //Dislexia friendly
- $('#dislexia_btn').click(function() {
-     $('.nb_well').addClass('dislexia');
- });

@@ -20,11 +20,10 @@ nav[data-toggle='toc'] .nav > li > a {
 nav[data-toggle='toc'] .nav > li > a:hover,
 nav[data-toggle='toc'] .nav > li > a:focus {
   padding-left: 1rem;
-  color: $secondary;
   text-decoration: none;
-  background-color: transparent;
+  background: lighten($gray-darker, 10%);
   border-left: 1px solid $primary;
-  text-decoration: underline;
+  border-left: 2.5px solid #40bdbe;
 }
 nav[data-toggle='toc'] .nav > .active > a,
 nav[data-toggle='toc'] .nav > .active:hover > a,
