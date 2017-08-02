@@ -26,7 +26,18 @@ scientific publications.
 The whole submission process simple and completely open. All of this workflow
 is carried on GitHub where the journal editors, the reviewers, and the authors can openly track the process.
 
+The journal has a rigorous peer review process and a growing editorial board formed by highly experienced researchers and research software engineers.
+
 ## Code of conduct
+The MC Notes community (editorial board, developers, authors, reviewers, and readers) adheres to a code of conduct adapted from the [Contibutor Covenant](http://contributor-covenant.org)
+
+Both authors and reviewers will have to confirm that they have read our [code of conduct](),
+and are expected to adhere to it.
+
+
+## Author guidelines
+
+## Reviewer guidelines
 
 ## Content licensing
 Copyright of MC Notes is retained by submitting authors and sccepted papers are
