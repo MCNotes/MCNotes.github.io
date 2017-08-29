@@ -1,14 +1,11 @@
 All the submissions should include the following documents:
 
-1. **notebook.ipynb**: Jupyter notebook executable in Python 3.x.
-This notebook should be able to be run as a standalone instance (without user interaction).
-Figures generated as part of the analysis should be displayed in the
-notebook (avoid the generation of external image files such as .jpg, .npg, etc.). You can use
-any name for your notebook (please avoid using spaces).
+1. **notebook.ipynb:** Jupyter notebook, note you can use any kernel for your analysis (e.g. R, Julia, Python) however if using Python only notebooks using the 3.x Python kernel will be accepted.
+This means that submissions based on notebooks using **Python 2.7 will not be accepted**. This notebook should be able to be run as a standalone instance (without user interaction). Figures generated as part of the analysis should be displayed in the notebook (avoid the generation of external image files such as .jpg, .png, etc.). You can use any name for your notebook (please avoid using spaces).
 
 2. **requirements.yml**:  Yaml file containing the packages required to execute your Notebook.
 The use of <a href='https://conda.io/docs/using/envs.html'> Conda environments
-</a> is highly encouraged. Alternatively, a _requirements.text_ file can be accepted.
+</a> is highly encouraged. Alternatively, a _requirements.txt_ file can be accepted.
 
 <!-- trigger modal-->
 <a class='tab' data-toggle="modal" data-target="#myModal"> See example enviroment </a>

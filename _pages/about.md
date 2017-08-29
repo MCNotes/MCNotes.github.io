@@ -37,6 +37,44 @@ and are expected to adhere to it.
 
 
 ## Author guidelines
+The submission process should be straightforward. Make sure you read the [Submitting an entry]({{site.baseurl}}) basic guideline in this website main page.
+
+### Things to consider before making a submission
+- Make sure your submission is in a GitHub repository
+- Make sure to know which dependencies and libraries you need to run your notebook in addition to the main kernel
+- Make sure everything is self contained in your submission (e.g. scripts, outputs, and data can be all acessed/displayed from the notebook)
+- Ensure your data is appropriately deposited in an adequate repository and you have a DOI generated
+
+### What should I include in my submission?
+- **notebook.ipynb:** Jupyter notebook, note you can use any kernel for your analysis (e.g. R, Julia, Python) however if using Python only notebooks using the 3.x Python kernel will be accepted. This means that notebooks using **Python 2.7 will not be accepted**. This notebook should be able to be run as a standalone instance (without user interaction). Figures generated as part of the analysis should be displayed in the notebook (avoid the generation of external image files such as .jpg, .png, etc.). You can use any name for your notebook (please avoid using spaces).
+
+- **requirements.yml**:  Yaml file containing the packages required to execute your Notebook.
+The use of <a href='https://conda.io/docs/using/envs.html'> Conda environments
+</a> is highly encouraged. Alternatively, a _requirements.txt_ file can be accepted.
+
+- **metadata.yml**: Yaml file containing the metadata
+for your publication. This file will be used to add a DOI to your notebook
+for citation.
+Optional entries are marked as _Optional_ in the template provided.
+
+~~~
+title: Title of Notebook
+  creators:
+    - {'name': "last, first", 'affiliation': 'university of ...'}
+    - {'name': "last, first", 'affiliation': 'university of ...'}
+    ...
+  description: "Short description (abstract) of the notebook."
+  keywords: ['keyword1', 'keyword2', ... ] # Optional
+  contributors: # Optional
+    - {'name': "last, first", 'type': 'DataCollector', 'affiliation': 'university of ...'}
+    - {'name': "last, first", 'type': 'ContactPerson', 'affiliation': 'university of ...'}
+  grants: # Optional
+    - 'id':'<FP7 grant id>'
+~~~
+
+- **bibliography.bib**: BibTeX file containing all the references included in your notebook (for information visit the [BibTeX website](http://www.bibtex.org).
+
+
 
 ## Reviewer guidelines
 

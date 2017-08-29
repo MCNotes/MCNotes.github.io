@@ -224,16 +224,13 @@ ensure Python 3.x is used.</p>
 
 <ol>
   <li>
-    <p><strong>notebook.ipynb</strong>: Jupyter notebook executable in Python 3.x.
-This notebook should be able to be run as a standalone instance (without user interaction).
-Figures generated as part of the analysis should be displayed in the
-notebook (avoid the generation of external image files such as .jpg, .npg, etc.). You can use
-any name for your notebook (please avoid using spaces).</p>
+    <p><strong>notebook.ipynb:</strong> Jupyter notebook, note you can use any kernel for your analysis (e.g. R, Julia, Python) however if using Python only notebooks using the 3.x Python kernel will be accepted.
+This means that submissions based on notebooks using <strong>Python 2.7 will not be accepted</strong>. This notebook should be able to be run as a standalone instance (without user interaction). Figures generated as part of the analysis should be displayed in the notebook (avoid the generation of external image files such as .jpg, .png, etc.). You can use any name for your notebook (please avoid using spaces).</p>
   </li>
   <li>
     <p><strong>requirements.yml</strong>:  Yaml file containing the packages required to execute your Notebook.
 The use of <a href="https://conda.io/docs/using/envs.html"> Conda environments
-</a> is highly encouraged. Alternatively, a <em>requirements.text</em> file can be accepted.</p>
+</a> is highly encouraged. Alternatively, a <em>requirements.txt</em> file can be accepted.</p>
   </li>
 </ol>
 
