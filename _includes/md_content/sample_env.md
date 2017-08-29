@@ -9,4 +9,4 @@ dependencies:
   - partd
   - bokeh
   - pip:
-    - git+https://github.com/blaze/dask.git#egg=dask[complete]
+    - nbval

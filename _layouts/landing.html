@@ -17,12 +17,12 @@
       <h2 class="h2-responsive wow fadeIn" data-wow-delay="0.2s">About the journal</h2>
     </div>
 
-    <!--Section: About-->
     <section id="about" class="text-justify wow fadeIn" data-wow-delay="0.2s">
       <p> {% capture my_include %}{% include /md_content/about.md%}{% endcapture %}
         {{ my_include | markdownify}}  </p>
       </section>
-      <!--Section: About-->
+
+      <!--Section: Submitting an entry-->
 
       <div class="divider-new">
         <h2 class="h2-responsive wow fadeIn" data-wow-delay="0.2s">Submitting an entry</h2>
@@ -31,7 +31,7 @@
     </div>
 
 
-    <!-- submitting an entry-->
+    <!-- submissions explained-->
     <div class='container'>
       <!-- about the submission process -->
       <div class='row'>
@@ -63,12 +63,8 @@
                     {% capture text %}{% include /md_content/first_steps.md%}{% endcapture %}
                     {{ text | markdownify}}
 
-
-
-                      <!-- Place this tag where you want the button to render. -->
-                      <a class="github-button" href="https://github.com/trallard/github-buttons/fork"
-                      data-icon="octicon-repo-forked" aria-label="Fork ntkme/github-buttons on GitHub">
-                        Fork </a>
+                    <!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/MCNotes/Base_volume/fork" aria-label="Fork MCNotes/Base_volume on GitHub">Fork</a>
 
                     </div>
                   </div>

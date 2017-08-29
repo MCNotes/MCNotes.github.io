@@ -22,7 +22,7 @@
 
 
   <!-- URL -->
-  <link rel="canonical" href="http://mcnotes.github.io/">
+  <link rel="canonical" href="http://localhost:4000/">
 
 
   <!-- The various JS scripts used in the website -->
@@ -83,17 +83,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href='http://mcnotes.github.io' class="navbar-brand" >MC notes</a>
+                <a href='http://localhost:4000' class="navbar-brand" >MC notes</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="nav_collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="http://mcnotes.github.io/about/"> About </a>
+                        <a href="http://localhost:4000/about/"> About </a>
                     </li>
 
                     <li>
-                        <a href="http://mcnotes.github.io/notebook.html"> Volumes </a>
+                        <a href="http://localhost:4000/notebook.html"> Volumes </a>
                     </li>
                 </ul>
             </div>
@@ -131,7 +131,6 @@
       <h2 class="h2-responsive wow fadeIn" data-wow-delay="0.2s">About the journal</h2>
     </div>
 
-    <!--Section: About-->
     <section id="about" class="text-justify wow fadeIn" data-wow-delay="0.2s">
       <p> 
         <p>Despite significant advances in our communication technology, academic publication retains a model that is over two hundred years old. Monatliche Correspondenz was an early journal which assimilated letters from astronomers across Europe, and redistributed them in edited form through compiling the letters into volumes. Franz von Zach, the Hungarian astronomer performed the editing. In 1801 issues of Monatliche Correspondenz closely tracked the discovery, loss and rediscovery of the dwarf planet Ceres. It was through this rediscovery that Carl Friederich Gauss became famous.</p>
@@ -143,7 +142,8 @@
 <p>MC Notes is a reimagining of the journal driven by trying to picture what von Zach would have done today with access to the modern tools of the internet. We have tried to create a sustainable model of submission based around Jupyter notebooks and Github. Our aim is for rapid turn around and communication of ideas. In a nod to our inspiration, MC Notes is named for Monatliche Correspondenze, with notes attempting to emphasise the informality of the communication. Work will be peer reviewed using the Github issues tracker.</p>
   </p>
       </section>
-      <!--Section: About-->
+
+      <!--Section: Submitting an entry-->
 
       <div class="divider-new">
         <h2 class="h2-responsive wow fadeIn" data-wow-delay="0.2s">Submitting an entry</h2>
@@ -152,7 +152,7 @@
     </div>
 
 
-    <!-- submitting an entry-->
+    <!-- submissions explained-->
     <div class='container'>
       <!-- about the submission process -->
       <div class='row'>
@@ -160,11 +160,10 @@
           <h3 class = 'h3-responsive text-center'> About the submission process </h3>
           <p class="text-justify">
             
-<p>Submissions are made via pull requests from a fork of he master branch of this
-repository.</p>
+<p>Submissions are made via pull requests from a fork of the master branch of a base volume repository.</p>
 
 <p>The review process is completely open to follow and interaction among
-author and reviewers is highly encouraged.</p>
+author and reviewers is highly encouraged. Every step of the reviewing process will be performed and monitored using <a href="https://github.com/MCNotes">GitHub</a></p>
 
 <p>The work presented here is meant to serve as a publication platform promoting reproducible research.</p>
  </p>
@@ -201,12 +200,8 @@ provides support for Python 3, hence those submitting notebooks using the Python
 ensure Python 3.x is used.</p>
 
 
-
-
-                      <!-- Place this tag where you want the button to render. -->
-                      <a class="github-button" href="https://github.com/trallard/github-buttons/fork"
-                      data-icon="octicon-repo-forked" aria-label="Fork ntkme/github-buttons on GitHub">
-                        Fork </a>
+                    <!-- Place this tag where you want the button to render. -->
+<a class="github-button" href="https://github.com/MCNotes/Base_volume/fork" aria-label="Fork MCNotes/Base_volume on GitHub">Fork</a>
 
                     </div>
                   </div>
@@ -242,8 +237,8 @@ The use of <a href="https://conda.io/docs/using/envs.html"> Conda environments
   </li>
 </ol>
 
-<p><!-- trigger modal-->
-<a class="tab" data-toggle="modal" data-target="#myModal"> See example enviroment </a></p>
+<!-- trigger modal-->
+<p><a class="tab" data-toggle="modal" data-target="#myModal"> See example enviroment </a></p>
 
 <!-- Modal -->
 <div class="modal" id="myModal" tabindex="-1" role="alert" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -255,9 +250,9 @@ The use of <a href="https://conda.io/docs/using/envs.html"> Conda environments
         </button>
       </div>
       <div class="modal-body">
-      
-      
-<figure class="highlight"><pre><code class="language-yml" data-lang="yml">      <span class="s">name</span><span class="pi">:</span> <span class="s">myenv</span>
+        
+        
+<figure class="highlight"><pre><code class="language-yml" data-lang="yml">        <span class="s">name</span><span class="pi">:</span> <span class="s">myenv</span>
 
 <span class="s">dependencies</span><span class="pi">:</span>
   <span class="pi">-</span> <span class="s">python=3.6</span>
@@ -268,9 +263,9 @@ The use of <a href="https://conda.io/docs/using/envs.html"> Conda environments
   <span class="pi">-</span> <span class="s">partd</span>
   <span class="pi">-</span> <span class="s">bokeh</span>
   <span class="pi">-</span> <span class="s">pip</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="s">git+https://github.com/blaze/dask.git#egg=dask[complete]</span>
+    <span class="pi">-</span> <span class="s">nbval</span>
 
-      </code></pre></figure>
+        </code></pre></figure>
 
       </div>
     </div>

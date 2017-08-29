@@ -10,7 +10,7 @@ any name for your notebook (please avoid using spaces).
 The use of <a href='https://conda.io/docs/using/envs.html'> Conda environments
 </a> is highly encouraged. Alternatively, a _requirements.text_ file can be accepted.
 
-  <!-- trigger modal-->
+<!-- trigger modal-->
 <a class='tab' data-toggle="modal" data-target="#myModal"> See example enviroment </a>
 
 <!-- Modal -->
@@ -23,10 +23,10 @@ The use of <a href='https://conda.io/docs/using/envs.html'> Conda environments
         </button>
       </div>
       <div class="modal-body">
-      {% capture my_include %}{% include /md_content/sample_env.md%}{% endcapture %}
-      {%highlight yml%}
-      {{ my_include}}
-      {%endhighlight%}
+        {% capture my_include %}{% include /md_content/sample_env.md%}{% endcapture %}
+        {%highlight yml%}
+        {{ my_include}}
+        {%endhighlight%}
       </div>
     </div>
   </div>
@@ -58,7 +58,6 @@ Optional entries are marked as _Optional_ in the template provided.
   </div>
 </div>
 </div>
-
 
 4. **bibliography.bib**: BibTeX file containing all the references included in your notebook (for information visit the [BibTeX website](http://www.bibtex.org).
 
