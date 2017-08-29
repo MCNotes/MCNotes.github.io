@@ -218,3 +218,17 @@ td{
 .nb_well{
   border: solid 2px lighten($gray-darker, 50%);
 }
+
+
+/*** popover ***/
+.popover{
+  background: lighten($gray-darker, 5%);
+  color: $gray-lighter;
+}
+.popover.bottom .arrow:after{
+  border-bottom-color: lighten($gray-darker, 5%);
+}
+
+.popover-content{
+  font-family: $base-font;
+}

@@ -64,3 +64,8 @@ function navbarScroll() {
      $('#myModal2').modal('show');
    }
  });
+
+// popvers
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover({trigger: 'hover','placement': 'bottom'});
+});

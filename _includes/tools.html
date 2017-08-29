@@ -11,11 +11,12 @@
 
    <div class="nav navbar-nav2 menu-right">
       <a href="{{site.url}}{{site.baseurl}}/notebooks/{{page.nb}}" download="{{page.nb}}"
-      class="menu-icon" >
+      class="menu-icon" data-toggle="popover"  data-content="Download notebook">
       <i class="fa fa-download" aria-hidden="true"></i></a>
-      <a href="{{site.url}}{{site.baseurl}}/notebooks/{{page.nb}}" download="{{page.nb}}"
-      class='menu-icon'>
-      <i class="fa fa-eye" aria-hidden="true"></i></a>
+      <a class='menu-icon' data-toggle="popover"  data-content="Dislexia friendly">
+        <i class="fa fa-eye" aria-hidden="true"></i> </a>
+      <a class='menu-icon' data-toggle="popover"  data-content="Launch in Azure">
+        <i class="fa fa-cloud" aria-hidden="true"></i> </a>
   </ul>
 </div>
 </div>
