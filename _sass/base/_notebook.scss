@@ -2,6 +2,7 @@
 
 .nav-tabs {
   border-bottom: 2px solid #ddd;
+  padding-top: 6px;
 }
 
 .nav-tabs > li.active > a, .nav-tabs > li.active >
@@ -18,7 +19,7 @@ a:focus, .nav-tabs > li.active > a:hover{
 .nav-tabs > li.active > a, .nav-tabs > li > a:hover {
   border: none;
   color: $secondary-light !important;
-  background: transparent;
+  background: lighten($gray-darker, 15%)!important;
   border-radius: 0px!important;
 }
 
