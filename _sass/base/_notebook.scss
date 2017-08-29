@@ -169,14 +169,15 @@ td{
   }
 }
 
-.navbar-nav2 > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
+.navbar-nav2 > a {
+  padding: 10px;
   line-height: 28px;
+  display: block;
+  text-align: center;
 }
 
-.menu .navbar-nav2 > li > a:hover,
-.menu .navbar-nav2 > li > a:focus {
+.menu .navbar-nav2 > a:hover,
+.menu .navbar-nav2 > a:focus {
   background: lighten($gray-darker, 15%)!important;
 }
 @media (min-width: 768px) {
