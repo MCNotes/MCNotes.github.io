@@ -172,12 +172,12 @@ td{
 .navbar-nav2 > li > a {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: 25px;
+  line-height: 28px;
 }
 
-.menu .navbar-nav > li > a:hover,
-.menu .navbar-nav > li > a:focus {
-  background: lighten($gray-darker, 15%);
+.menu .navbar-nav2 > li > a:hover,
+.menu .navbar-nav2 > li > a:focus {
+  background: lighten($gray-darker, 15%)!important;
 }
 @media (min-width: 768px) {
   .menu-left {

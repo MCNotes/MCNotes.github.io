@@ -3,7 +3,7 @@
 ---
 @charset "utf-8";
 
-@import url('https://fonts.googleapis.com/css?family=Quattrocento|Monserrat');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento|Monserrat|Open+Sans');
 
 @import "base/variables";
 
@@ -11,6 +11,8 @@
 $title-font: 'Monserrat', sans-serif;
 /*$title-font: 'Cantata One', Georgia, serif;*/
 $base-font: 'Quattrocento', serif;
+$dislexia-font: 'Open Sans', sans-serif;
+
 
 /*!
  * bootswatch v3.3.7
