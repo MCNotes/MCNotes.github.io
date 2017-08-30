@@ -91,9 +91,18 @@ The submission process should be straightforward. Make sure you read the [Submit
  project </li>
  <li> Should be able to be run as a 'standalone notebook' </li>
  <li> It should not contain data within the submission repo (e.g. .csv, .xml, .txt files) </li>
+ <li> Your code should be open source (check the [OSI definition](https://opensource.org/osd)) </li>
 
+
+### What about submissions that rely upon proprietary languages/development environments?
+
+We strongly prefer software that doesn't rely upon proprietary (paid for) development environments/programming languages. However, provided your submission meets our submission requirements (including having a valid open source license) then we will consider your submission for review. Should your submission be accepted for review, we may ask you, the submitting author, to help us find reviewers who already have the required development environment installed.
+
+### What does the submission/review process looks like?
+We highly encourage you to familiarize with the [reviewers guidelines](#reviewers).
 
 ## Reviewer guidelines
+
 
 ## Content licensing
 Copyright of MC Notes is retained by submitting authors and accepted papers are
