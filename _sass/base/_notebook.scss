@@ -214,11 +214,19 @@ td{
 }
 
 
-/*** dislexia friendly***/
+/*** dyslexia friendly***/
 .nb_well{
   border: solid 2px lighten($gray-darker, 50%);
 }
 
+
+body{
+  &.dyslexia{
+    font-family: $dislexia-font;
+    background-color: #FAFAC8;
+    font-size: 1.5em;
+  }
+}
 
 /*** popover ***/
 .popover{

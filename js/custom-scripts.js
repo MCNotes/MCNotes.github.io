@@ -69,3 +69,9 @@ function navbarScroll() {
 $(document).ready(function(){
     $('[data-toggle="popover"]').popover({trigger: 'hover','placement': 'bottom'});
 });
+
+
+// dyslexia
+function dyslexia_friendly(){
+  $('body').addClass('dyslexia');
+}
