@@ -10,6 +10,8 @@ This website is hosted as a GitHub page (github-pages). In short, is built stati
 # Continuous integration
 Testing of the website is done using [Travis CI](https://travis-ci.org). Every time a push is done to the GitHub repository a build will be triggered automatically using Travis.
 
+As the website is a static site generated using Jekyll [html_proofer](https://github.com/gjtorikian/html-proofer) is used to validate the HTML output. This set of tests check if the images references are legitimate, of there are alt tags, checks for internal and external links and 4xx associated errors. 
+
 # How to use Jekyll to build this site
 
 ### Editing pages online with GitHub
