@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<!--custom header -->
+{% include head.html %}
+
+<!-- Scroller for TOC-->
+<body data-spy="scroll" data-target="#toc">
+
+
+<!-- Main content needs to be in a wrap for
+when the sidebar is displayed-->
+
+<!-- nav bar-->
+{% include nav.html %}
+
+<!-- page header -->
+<div class="header">
+    <h1 class="header_logo">{{page.title}} </h1>
+</div>
+
+<div class='wrap'>
+
+  <!-- need an offset-->
+  <div class="container offset">
+    <div class="row">
+
+      <!--- Main content--->
+      <div class="col-sm-9 col-lg-9 ">
+        <main>
+          {{content}}
+        </main>
+
+        <br /> <br /><br />
+        <a href="{{ site.url }}">
+          <i class="fa fa-home" aria-hidden="true"></i>
+          Home</a>
+        <br />
+
+      </div>
+
+
+
+      <div class="col-sm-3 well2">
+        {% include toc.html %}
+      </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
+{% include footer.html %}
+
+</body>
+
+
+</html>
