@@ -99,7 +99,7 @@ The submission process should be straightforward. Make sure you read the [Submit
 We strongly prefer software that doesn't rely upon proprietary (paid for) development environments/programming languages. However, provided your submission meets our submission requirements (including having a valid open source license) then we will consider your submission for review. Should your submission be accepted for review, we may ask you, the submitting author, to help us find reviewers who already have the required development environment installed.
 
 ### What does the submission/review process looks like?
-We highly encourage you to familiarize with the [reviewers guidelines](#reviewers).
+We highly encourage you to familiarize with the reviewers guidelines described below.
 
 ## Reviewer guidelines
 
