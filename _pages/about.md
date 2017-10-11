@@ -125,8 +125,9 @@ We highly encourage you to familiarize with the reviewers guidelines described b
   <li>Add the complementary files: bibtex, conda environment, metadata</li>
   <li>Create a pull request to the master branch of the original repository</li>
 
-
+<br> <br>
 **Review**
+
 After submission:
 <li> The PR is validated (notebook tested and files content/existence verified).</li>
 <li> One or more reviewers are assigned and the review is carried out in the **journal reviews repository**. </li>
@@ -141,6 +142,17 @@ After submission:
 ---
 
 ## Reviewer guidelines
+
+Firstly, thank you so much for agreeing to review for MC Notes, we're delighted to have your help. This document is designed to outline our editorial guidelines and help you understand our requirements for accepting a submission into the journal.
+
+### Some guiding principles for you the reviewer
+We like to think of MC Notes as a 'developer/literate computing friendly' journal.
+That is, if the submitting authors have followed best practices (have documentation, tests, continuous integration, and a license) then their review should be extremely rapid.
+
+
+For those authors that don't quite meet the bar, please try to give clear feedback on how they could improve their submission.
+
+We encourage reviewers to file issues against the submitted repository's issue tracker. Include in your review links to any new issues that you the reviewer believe to be impeding the acceptance of the repository.
 
 
 ## Content licensing
