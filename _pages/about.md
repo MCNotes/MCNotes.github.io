@@ -101,16 +101,37 @@ The submission process should be straightforward. Make sure you read the [Submit
  project </li>
  <li> Should be able to be run as a 'standalone notebook' </li>
  <li> It should not contain data within the submission repo (e.g. .csv, .xml, .txt files) </li>
- <li> Your code should be open source (check the [OSI definition](https://opensource.org/osd)) </li>
+ <li> Your code should be open source (check the <a href='https://opensource.org/osd' target='blank'> OSI definition </a>) </li>
 
 f you think your submission is not an obvious fit or have a question then please submit a pre-submission enquiry. ******
 
 ### What about submissions that rely upon proprietary languages/development environments?
 
-We strongly prefer software that doesn't rely upon proprietary (paid for) development environments/programming languages. However, provided your submission meets our submission requirements (including having a valid open source license) then we will consider your submission for review. Should your submission be accepted for review, we may ask you, the submitting author, to help us find reviewers who already have the required development environment installed.
+We strongly prefer software that doesn't rely upon proprietary (paid for) development environments/programming languages. However, provided your submission meets our submission requirements (including having a valid open source license) then we will consider your submission for review.
+
+Should your submission be accepted for review, we may ask you, the submitting author, to help us find reviewers who already have the required development environment installed.
 
 ### What does the submission/review process looks like?
 We highly encourage you to familiarize with the reviewers guidelines described below. Broadly speaking though, provided you have followed our pre-submission steps and meet our submission requirements then you should expect a rapid review.
+
+**Submission**
+
+  <li>If you need additional data make this available in a suitable repository
+  of your choice (e.g. FigShare, ORDA, GoogleDrive)</li>
+  <li>Fork the current volume repository</li>
+  <li>Make the notebook available in a **new branch** of your fork of the
+  volume repository and include a suitable
+  <a href='https://opensource.org/licenses'> OSI approved open source license </a></li>
+  <li>Add the complementary files: bibtex, conda environment, metadata</li>
+  <li>Create a pull request to the master branch of the original repository</li>
+
+
+**Review**
+After submission:
+
+
+
+#### Review
 
 ## Reviewer guidelines
 
