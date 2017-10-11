@@ -35,6 +35,7 @@ The MC Notes community (editorial board, developers, authors, reviewers, and rea
 Both authors and reviewers will have to confirm that they have read our [code of conduct]({{site.baseurl}}{% link _pages/CoC.md %}),
 and are expected to adhere to it.
 
+---
 
 ## Author guidelines
 The submission process should be straightforward. Make sure you read the [Submitting an entry]({{site.baseurl}}) basic guideline in this website main page.
@@ -50,15 +51,24 @@ The submission process should be straightforward. Make sure you read the [Submit
 ### What should I include in my submission?
 
 <ol>
-  <li> <strong> notebook.ipynb: </strong> Jupyter notebook, note you can use any kernel for your analysis (e.g. R, Julia, Python) however if using Python only notebooks using the 3.x Python kernel will be accepted. This means that notebooks using <strong> Python 2.7 will not be accepted </strong>. This notebook should be able to be run as a standalone instance (without user interaction). Figures generated as part of the analysis should be displayed in the notebook (avoid the generation of external image files such as .jpg, .png, etc.). You can use any name for your notebook (please avoid using spaces).
+  <li> <strong> notebook.ipynb: </strong> Jupyter notebook, note you can use any kernel for your analysis (e.g. R, Julia, Python).
+  However if you are using Python only notebooks using the 3.x Python kernel
+  will be accepted. This means that notebooks using <strong> Python 2.7 will
+  not be accepted </strong>. <br>This notebook should be able to be run as a
+  standalone instance (without user interaction). Figures generated as part of
+  the analysis should be displayed in the notebook (avoid the generation of
+  external image files such as .jpg, .png, etc.). <br>You can use any name for
+  your notebook (please avoid using spaces).
   </li>
 
-  <li> <strong> requirements.yml: </strong>  Yaml file containing the packages required to execute your Notebook.
+  <li> <strong> requirements.yml: </strong>  Yaml file containing the packages
+  required to execute your Notebook.
   The use of <a href='https://conda.io/docs/using/envs.html'> Conda environments
-  </a> is highly encouraged. Alternatively, a _requirements.txt_ file can be accepted.
+  </a> is highly encouraged. Alternatively, a <strong>requirements.txt</strong> file can be accepted.
   </li>
 
-  <li> <strong> bibliography.bib: </strong> BibTeX file containing all the references included in your notebook (for information visit the [BibTeX website](http://www.bibtex.org).
+  <li> <strong> bibliography.bib: </strong> BibTeX file containing all the references included in your notebook (for information visit the <a href='http://www.bibtex.org' target='blank'>
+  BibTeX website </a>.
   </li>
 
   <li> <strong> metadata.yml: </strong> yml file containing the metadata
@@ -93,13 +103,14 @@ The submission process should be straightforward. Make sure you read the [Submit
  <li> It should not contain data within the submission repo (e.g. .csv, .xml, .txt files) </li>
  <li> Your code should be open source (check the [OSI definition](https://opensource.org/osd)) </li>
 
+f you think your submission is not an obvious fit or have a question then please submit a pre-submission enquiry. ******
 
 ### What about submissions that rely upon proprietary languages/development environments?
 
 We strongly prefer software that doesn't rely upon proprietary (paid for) development environments/programming languages. However, provided your submission meets our submission requirements (including having a valid open source license) then we will consider your submission for review. Should your submission be accepted for review, we may ask you, the submitting author, to help us find reviewers who already have the required development environment installed.
 
 ### What does the submission/review process looks like?
-We highly encourage you to familiarize with the reviewers guidelines described below.
+We highly encourage you to familiarize with the reviewers guidelines described below. Broadly speaking though, provided you have followed our pre-submission steps and meet our submission requirements then you should expect a rapid review.
 
 ## Reviewer guidelines
 
