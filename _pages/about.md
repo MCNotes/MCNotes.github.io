@@ -128,10 +128,17 @@ We highly encourage you to familiarize with the reviewers guidelines described b
 
 **Review**
 After submission:
+<li> The PR is validated (notebook tested and files content/existence verified).</li>
+<li> One or more reviewers are assigned and the review is carried out in the **journal reviews repository**. </li>
+<li> Authors respond to reviewer-raised issues (if any are raised) on the submitted repository's issue tracker. Reviewer contributions, like any other contributions, should be acknowledged in the repository. </li>
+<li> The files in your submission are validated again (in case any changes were
+  made since the initial submission). </li>
+<li> Your submission will  be deposited in Zenodo and a DOI will be issued.</li>
+<li> You will be asked to update your original repository with the DOI generated </li>
+<li> Your submission will be featured in the journal </li>
+<li> And that is it! </li>
 
-
-
-#### Review
+---
 
 ## Reviewer guidelines
 
