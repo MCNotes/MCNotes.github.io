@@ -29,6 +29,8 @@ is carried on GitHub where the journal editors, the reviewers, and the authors c
 
 The journal has a rigorous peer review process and a growing editorial board formed by highly experienced researchers and research software engineers (RSEs).
 
+---
+
 ## Code of conduct
 The MC Notes community (editorial board, developers, authors, reviewers, and readers) adheres to a code of conduct adapted from the [Contibutor Covenant](http://contributor-covenant.org)
 
@@ -143,17 +145,28 @@ After submission:
 
 ## Reviewer guidelines
 
-Firstly, thank you so much for agreeing to review for MC Notes, we're delighted to have your help. This document is designed to outline our editorial guidelines and help you understand our requirements for accepting a submission into the journal.
+Firstly, thank you so much for agreeing to review for MC Notes, we're
+delighted to have your help.
+
+This document is designed to outline our editorial guidelines and help
+you understand our requirements for accepting a submission into the journal.
 
 ### Some guiding principles for you the reviewer
 We like to think of MC Notes as a 'developer/literate computing friendly' journal.
-That is, if the submitting authors have followed best practices (have documentation, tests, continuous integration, and a license) then their review should be extremely rapid.
+That is, if the submitting authors have followed best practices
+(have documentation, tests, continuous integration, and a license) then their
+review should be extremely rapid.
 
 
-For those authors that don't quite meet the bar, please try to give clear feedback on how they could improve their submission.
+For those authors that don't quite meet the bar, please try to give clear
+feedback on how they could improve their submission.
 
-We encourage reviewers to file issues against the submitted repository's issue tracker. Include in your review links to any new issues that you the reviewer believe to be impeding the acceptance of the repository.
+We encourage reviewers to file issues against the submitted repository's issue
+tracker. Include in your review links to any new issues that you the reviewer
+believe to be impeding the acceptance of the repository.
 
+#### The submission files
+The submission files are automatically checked at the moment of the submission.
 
 ## Content licensing
 Copyright of MC Notes is retained by submitting authors and accepted papers are
@@ -164,7 +177,8 @@ Any code snippets included in MC Notes submissions are subjected to the [MIT lic
 ## Open DreamKit
 
 <a href='http://opendreamkit.org' target='blank'><img src='{{ "/images/ODK.png" | prepend:absolute_url }}'
-style='width:200px; display:inline; float:left; padding: 15px'></a>
+style='width:200px; display:inline; float:left; padding: 15px' alt='odk-logo'>
+</a>
 <br><br>
 This project was developed as part of the <a href='http://opendreamkit.org' target='blank'> OpenDreamKit project</a>. A <a href='https://ec.europa.eu/programmes/horizon2020/'> Horizon2020 </a> European
 Research Infrastructure project (<a href='http://cordis.europa.eu/project/rcn/198334_en.html'> #676541 </a>) that
