@@ -160,3 +160,14 @@ Copyright of MC Notes is retained by submitting authors and accepted papers are
 subject to a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
 
 Any code snippets included in MC Notes submissions are subjected to the [MIT license](https://opensource.org/licenses/MIT).
+
+## Open DreamKit
+
+<a href='http://opendreamkit.org' target='blank'><img src='{{ "/images/ODK.png" | prepend:absolute_url }}'
+style='width:200px; display:inline; float:left; padding: 15px'></a>
+<br><br>
+This project was developed as part of the <a href='http://opendreamkit.org' target='blank'> OpenDreamKit project</a>. A <a href='https://ec.europa.eu/programmes/horizon2020/'> Horizon2020 </a> European
+Research Infrastructure project (<a href='http://cordis.europa.eu/project/rcn/198334_en.html'> #676541 </a>) that
+has been running since September 2015.  
+
+<br> <br> <br> <br>
