@@ -1,24 +1,34 @@
+<!-- Add tool bar  and headers to the top of the notebooks -->
+<!-- Large header that shrinks -->
 <div class="header nb">
   <h1 class="header_logo">{{page.title}}</h1> <br>
   <h4 class='author'> Author: {{page.author}} </h4>
-
 </div>
 
- <div class="menu" >
+<!-- Smaller header: menu and notebook info -->
+<div class="menu" >
   <div class='container'>
-   <div class='menu-title'> {{page.title}} </div>
-   <div class='author'> Author: {{page.author}}</div>
+    <div class='menu-title'> {{page.title}} </div>
+    <div class='author'> Author: {{page.author}}</div>
 
-   <div class="nav navbar-nav2 menu-right">
-      <a href="{{site.url}}{{site.baseurl}}/notebooks/{{page.nb}}" download="{{page.nb}}"
-      class="menu-icon" data-toggle="popover"  data-content="Download notebook">
+    <!-- Tools in menu-->
+    <div class="nav navbar-nav2 menu-right">
+      <a href=""{{ "/notebooks/{{page.nb}}" | absolute_url }}""
+      download="{{page.nb}}" class="menu-icon" data-toggle="popover"
+      data-content="Download notebook">
       <i class="fa fa-download" aria-hidden="true"></i></a>
+
       <a class='menu-icon' data-toggle="popover"  data-content="Dyslexia friendly"
       onclick='dyslexia_friendly()'>
-        <i class="fa fa-eye" aria-hidden="true"></i> </a>
+      <i class="fa fa-eye" aria-hidden="true"></i> </a>
+
       <a class='menu-icon' data-toggle="popover"  data-content="Launch in Azure"
       href='https://notebooks.azure.com'>
-        <i class="fa fa-cloud" aria-hidden="true"></i> </a>
-  </ul>
+      <i class="fa fa-cloud" aria-hidden="true"></i> </a>
+    </ul>
+  </div>
 </div>
 </div>
+
+
+"{{ "/notebooks/{{page.nb}}" | absolute_url }}"
