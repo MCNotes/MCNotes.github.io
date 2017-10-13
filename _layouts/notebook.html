@@ -7,27 +7,30 @@
 <body data-spy="scroll" data-target="#toc">
 
 
-  <!--main content needs to be in a wrap for
+<!--Main content needs to be in a wrap for
   when the sidebar is displayed-->
   <div class='wrap'>
 
     <!-- navbar -->
     {% include nav.html %}
 
+    <!-- tools and headers -->
     {% include tools.html %}
   </div>
 
+  <!-- Main content -->
   <div class='wrap'>
     <div class="container offset_nb">
       <div class="row">
 
-        <!--- Main content--->
+        <!--- Notebook content content--->
         <div class="col-sm-9 col-lg-9 ">
           <main>
             {{content}}
           </main>
         </div>
 
+        <!--- Side bar with TOC and comments--->
         <div class="col-sm-3 well2">
           {% include sidebar.html %}
         </div>
@@ -35,7 +38,7 @@
     </div>
   </div>
 
-
+<!-- Footer -->
 {% include footer.html %}
 
   </body>

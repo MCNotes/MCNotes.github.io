@@ -71,7 +71,7 @@
 <body data-spy="scroll" data-target="#toc">
 
 
-  <!--main content needs to be in a wrap for
+<!--Main content needs to be in a wrap for
   when the sidebar is displayed-->
   <div class='wrap'>
 
@@ -109,38 +109,50 @@
     </nav>
 
 
-    <div class="header nb">
+    <!-- tools and headers -->
+    <!-- Add tool bar  and headers to the top of the notebooks -->
+<!-- Large header that shrinks -->
+<div class="header nb">
   <h1 class="header_logo">Analysis of variance</h1> <br>
   <h4 class='author'> Author: T.Tania </h4>
-
 </div>
 
- <div class="menu" >
+<!-- Smaller header: menu and notebook info -->
+<div class="menu" >
   <div class='container'>
-   <div class='menu-title'> Analysis of variance </div>
-   <div class='author'> Author: T.Tania</div>
+    <div class='menu-title'> Analysis of variance </div>
+    <div class='author'> Author: T.Tania</div>
 
-   <div class="nav navbar-nav2 menu-right">
-      <a href="http://mcnotes.github.io/notebooks/AoV_R_Notebook.ipynb" download="AoV_R_Notebook.ipynb"
-      class="menu-icon" data-toggle="popover"  data-content="Download notebook">
+    <!-- Tools in menu-->
+    <div class="nav navbar-nav2 menu-right">
+      <a href=""" | absolute_url }}""
+      download="AoV_R_Notebook.ipynb" class="menu-icon" data-toggle="popover"
+      data-content="Download notebook">
       <i class="fa fa-download" aria-hidden="true"></i></a>
+
       <a class='menu-icon' data-toggle="popover"  data-content="Dyslexia friendly"
       onclick='dyslexia_friendly()'>
-        <i class="fa fa-eye" aria-hidden="true"></i> </a>
+      <i class="fa fa-eye" aria-hidden="true"></i> </a>
+
       <a class='menu-icon' data-toggle="popover"  data-content="Launch in Azure"
       href='https://notebooks.azure.com'>
-        <i class="fa fa-cloud" aria-hidden="true"></i> </a>
-  </ul>
+      <i class="fa fa-cloud" aria-hidden="true"></i> </a>
+    </ul>
+  </div>
 </div>
 </div>
+
+
+"" | absolute_url }}"
 
   </div>
 
+  <!-- Main content -->
   <div class='wrap'>
     <div class="container offset_nb">
       <div class="row">
 
-        <!--- Main content--->
+        <!--- Notebook content content--->
         <div class="col-sm-9 col-lg-9 ">
           <main>
             <h1 id="bad-day-2-anova">BAD DAY 2: ANOVA</h1>
@@ -493,6 +505,7 @@ determines the groups, and the function you wish to apply to each of the groups.
           </main>
         </div>
 
+        <!--- Side bar with TOC and comments--->
         <div class="col-sm-3 well2">
           
 <!-- Side bar with additional features -->
@@ -529,7 +542,7 @@ determines the groups, and the function you wish to apply to each of the groups.
     </div>
   </div>
 
-
+<!-- Footer -->
 
 <!--Footer-->
 <footer class="page-footer center-on-small-only">
