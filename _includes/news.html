@@ -1,22 +1,28 @@
+<!-- News section -->
 <div class="container">
 
   <div class="divider-new">
     <h2 class="h2-responsive wow fadeIn" data-wow-delay="0.2s">
-    News</h2>
+      News
+    </h2>
   </div>
 
 
-
+<!-- Content: generated automatically from the posts -->
 <ul class="dates">
   {% for post in site.posts offset: 0 limit: 5 %}
     <li>
-      <p class='date'><day>{{ post.date | date: "%d"}}</day>
-      {{ post.date | date: "%b"}}</p>
-      <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+      <p class='date'><day> {{ post.date | date: "%d"}} </day>
+      {{ post.date | date: "%b"}} </p>
+      <h3>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </h3>
       {{ post.excerpt }}
       <br>
-      <a href="{{ site.baseurl }}{{ post.url }}"> Continue reading
-        <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+      <a href="{{ site.baseurl }}{{ post.url }}">
+        Continue reading
+        <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+      </a>
 
     </li>
 
