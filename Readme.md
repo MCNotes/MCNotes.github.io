@@ -1,5 +1,9 @@
 [![Build Status](https://travis-ci.org/MCNotes/MCNotes.github.io.svg?branch=master)](https://travis-ci.org/MCNotes/MCNotes.github.io)
 
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+
 The website is located in [https://MCNotes.github.io](https://MCNotes.github.io)
 
 
